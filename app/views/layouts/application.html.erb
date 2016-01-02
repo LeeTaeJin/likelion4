@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>멋쟁이 사자처럼 평택대학교</title>
+  
+  <%= stylesheet_link_tag    'application'%>
+  <%= javascript_include_tag 'application'%>
+  
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  
+  <!--지연스 .js-->
+
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.13.3/jquery.tablesorter.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="//cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script>
+  <%= csrf_meta_tags %>
+  
+    <!--디자인 css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
+    <!--Font css-->
+    <link href="http://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/earlyaccess/jejugothic.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+  
+    <!--Smooth Scroll-->
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>-->
+    <!--<script src="http://fatlinesofcode.github.io/jquery.smoothwheel/src/jquery.smoothwheel.js"></script>-->
+
+    <!--달력-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.8.18/themes/base/jquery-ui.css" type="text/css" /> 
+
+
+
+ </head>
+
+<body>
+
+  <!--메뉴바-->
+  
+  <!--<div class="navbar navbar-default navbar-fixed-top topnav" id="bs-example-navbar-collapse-1" role="navigation" data-0="line-height:100px; height:100px; background-color:rgba(0,0,0,0.3);" data-300="line-height:60px; height:60px; background-color:rgba(0,0,0,1);" style="line-height: 100px; height: 100px; background-color: rgba(0, 0, 0, 0);">-->
+  <div class="navbar navbar-fixed-top skrollable skrollable-between" id="menu_bar" role="navigation" data-0="line-height:100px; height:100px; background-color:rgba(0,0,0,0.3);" data-300="line-height:60px; height:60px; background-color:rgba(0,0,0,1);" style="line-height: 100px; height: 70px; background-color: rgba(0, 0, 0, 0.298039);">
+			 <div class="container" id="menu_font" >
+			   
+			   <div class="row">
+			     
+			     <a href="/home/main">
+			     <!--<div class="col-md-2 col-xs-2" style="background-color:#353535; color:white; font-size:20px;" align="center" >-->
+			     <div class="col-md-2 col-xs-2" style="background-color:black; color:white; font-size:20px; padding-top:5px; padding-bottom:5px" align="center" >
+			       멋사 x 평택대학교
+			     </div>
+			     </a>
+			     <div class="col-md-6 col-xs-5">
+			      <!--<div class="col-md-5 col-xs-5">-->
+			        <div class="navbar-collapse collapse">
+  			       <!--<ul class="nav navbar-nav skrollable skrollable-between" data-0="margin-top:20px;" data-300="margin-top:5px;" style="margin-top: 25px; font-size:17px">-->
+                <ul class="nav navbar-nav skrollable skrollable-between" data-0="margin-top:20px;" data-300="margin-top:5px;" style="margin-top: 10px; font-size:15px">
+                
+                  <li class=""><a href="/"  style="color:#D5D5D5">HOME</a></li>
+                  
+                  <li class=""><a href="/post/main"  style="color:#D5D5D5">NOTICE</a></li>
+                  <!--<li class=""><a href="#section-works"  style="color:#D5D5D5">문의하기</a></li>-->
+                  <% if Post.where("category=?", "과제").count == 0 %>
+                    <li class=""><a href="/homework/main?view_post=등록된 과제가 없습니다."  style="color:#D5D5D5">HOMEWORK</a></li>
+                  <%else%>
+                    <li class=""><a href="/homework/main?view_post=<%=Post.where("category=?", "과제").last.id%>"  style="color:#D5D5D5">HOMEWORK</a></li>
+                  <%end%>
+                  <li class=""><a href="/community/main?posting='all'"  style="color:#D5D5D5">COMMUNITY</a></li>
+                  <!--<li class=""><a href="#section-contact"><button type="button" class="btn btn-default btn-circle btn-lg"><i class="glyphicon glyphicon-log-out"></i></button></a></li>-->
+                </ul>
+              </div><!--/.navbar-collapse -->
+			      </div>
+			     
+			     
+			     
+			          
+			     <div class="col-md-4 col-xs-5">
+			     <!--<div class="col-md-5 col-xs-5">-->
+			       
+			       <div class="navbar-collapse collapse">
+  			     			          
+                    <!--<i class="glyphicon glyphicon-heart-empty" style="color:white;"><%#= current_user.student_name %>님 반갑습니다</i> -->
+                    <!--<ul class="nav navbar-nav skrollable skrollable-between" data-0="margin-top:20px;" data-300="margin-top:5px;" style="margin-top: 25px; font-size:17px">-->
+                    <ul class="nav navbar-nav skrollable skrollable-between" data-0="margin-top:20px;" data-300="margin-top:5px;" style="margin-top: 10px; font-size:15px">
+                    
+                      <!--<li class=""><a href="/book/admin_menu"  style="color:#D5D5D5">ADMIN</a></li>-->
+                    
+                    
+                      <!--<li class="" style="color:white"><a href="/book/mypage"  style="color:#D5D5D5">MY_PAGE</a></li>-->
+                      <!--<li style="color:white">-->
+                      <!--  <a href="" style="color:white"><i class="glyphicon glyphicon-heart-empty" style="color:white;"></i>%= current_user.student_name %>님 반갑습니다</a>-->
+                      <!--</li>-->
+                      <% if current_user %>
+                        <li style="color:white">
+                          <a href="/users/sign_out" style="color:#D5D5D5">로그아웃</a>
+                        </li>
+                      <% else%>
+                        <li style="color:white">
+                          <a href="/users/sign_in" style="color:#D5D5D5">로그인</a>
+                        </li>
+                      <%end%>
+                    </ul>
+                  
+              </div><!--/.navbar-collapse -->
+			     </div>
+			  
+				</div>
+			</div>
+		</div>
+ 
+      <%= yield %>
+  
+  
+  <!--마지막 copyright 부분-->
+
+  <footer>
+    <center>
+      
+      <div style="background-color:#253340;" id="menu_font">      
+      <!--<div style="background-color:#0C5838;" id="menu_font">-->
+     
+        
+      <br><br>
+      </div>
+    </center>
+  </footer>
+
+  
+      <!--<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+      <script type="text/javascript" src="http://www.ironsummitmedia.com/js/modernizr.custom.82681.js"></script>
+      <script type="text/javascript" src="http://www.ironsummitmedia.com/js/jquery.easing.1.3.js"></script>
+      <script type="text/javascript" src="http://www.ironsummitmedia.com/js/custom.js"></script>
+      <!--<script type="text/javascript" src="application.js"> </script>-->
+      
+      <!--달력-->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+      <script src="http://code.jquery.com/ui/1.8.18/jquery-ui.min.js"></script>
+
+  </body>
+</html>
+
+
+

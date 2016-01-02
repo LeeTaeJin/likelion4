@@ -1,0 +1,80 @@
+
+<div style="background-color:lightgray; padding-top:150px;padding-bottom:300px" id="menu_font">
+  
+  <div class="row">
+    
+    <div class="col-md-2 col-md-xs-2"></div>
+      
+      <div class="col-md-8 col-md-xs-8" align="center">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            
+            <h2>H O M E W O R K</h2>
+            <hr>
+            <div class="col-md-4 col-sm-12">
+              <% if current_user.email=="admin@ptu.ac.kr"%>
+                <a href="/homework/write" class="btn btn-info btn-lg btn-block" >과제 생성하기</a>
+              <%end%>
+              
+              <br><!--과제 생성 버튼-->
+              <div class="list-group table-of-contents">
+                <% Post.where("category = ?", "과제").each do |a| %>
+                  <a href="/homework/main?view_post=<%= a.id %>" class="list-group-item"><%= a.title %></a>
+                <%end%>
+              </div>
+              
+            </div>
+            
+            <div class="col-md-8 col-sm-12">
+              <div class="panel panel-default">
+                  <% if Post.where("category=?", "과제").count == 0 %><!--과제가 등록된게 없으면-->
+                    <div class="panel-body">
+                      <h4><%= @view_post%></h4>
+                      <hr>
+                      
+                      <h5><pre style="border:0px; background:white " align="left" id="menu_font">
+                        <%= @view_post%>
+                      </pre></h5><br>
+                    </div>
+                  
+                  <% else%><!--등록된 과제가 있으면-->
+                    <div class="panel-body">
+                      <h4><%= @view_post.title %></h4>
+                      <hr>
+                      
+                      <h5><pre style="border:0px; background:white " align="left" id="menu_font">
+                        <%= @view_post.content %>
+                      </pre></h5><br>
+                      <a href="/homework/homework_write?homework_post=<%=@view_post.id%>" class="btn btn-info btn-lg btn-block" >과제 제출하기</a>
+                    </div>
+                  <%end%>
+                  
+              </div>
+              
+              <!--<div class="panel panel-default">-->
+              <!--  %= @view_post.homeworks.each do |p|%>-->
+              <!--    <div class="panel-body">-->
+                    
+              <!--      <h4>%= p.content %></h4>-->
+              <!--      <hr>-->
+                    
+              <!--      <h5><pre style="border:0px; background:white " align="left" id="menu_font">-->
+              <!--        %= p.homeworks %>-->
+              <!--      </pre></h5><br>-->
+              <!--      <a href="/homework/homework_write?homework_post=%=@view_post.id%>" class="btn btn-info btn-lg btn-block" >과제 제출하기</a>-->
+              <!--    </div>-->
+              <!--  %end%>-->
+              <!--</div>-->
+            </div>
+            
+            
+          </div><!--<div class="panel-body">-->
+        </div><!--<div class="panel panel-default">-->
+      </div><!--<div class="col-md-8 col-md-xs-8">-->
+      
+    <div class="col-md-2 col-md-xs-2" id="#side">
+       <!--%= render "book/side" %>-->
+    </div>
+    
+  </div><!--div class row-->
+</div><!--<div style="background-color:lightgray">-->

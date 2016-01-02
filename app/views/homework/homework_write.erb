@@ -1,0 +1,73 @@
+<div style="background-color:lightgray; padding-top:150px;padding-bottom:150px" id="menu_font">
+  
+  <div class="row">
+    
+    <div class="col-md-2 col-md-xs-2"></div>
+      
+      <div class="col-md-8 col-md-xs-8" align="center">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            
+            <h2>[ <%=@homework_post.title%> ]</h2>
+            <hr>
+            
+            <%= form_tag("/homework/homework_writeprocess", method: "post") do %>
+              <div class="col-md-2 col-sm-1"></div>
+              
+              <div class="col-md-8 col-sm-10">
+                  
+                <h5><pre style="border:0px; background:white " align="left" id="menu_font">
+                  <%= @homework_post.content %>
+                </pre></h5><br>  
+                
+                <br>
+                <input type="hidden" name="homework_post" value="<%=@homework_post.id%>">
+                
+                <div class="input-group">
+                  <span class="input-group-addon" id="basic-addon1">상세설명</span>
+                  <textarea name="content" class="form-control" placeholder="내용을 입력해주세요 :D" rows="10" cols="50"  required></textarea>
+                </div>
+                
+                <br>
+                
+                <div class="input-group">
+                  <span class="input-group-addon" id="basic-addon1">주소</span>
+                  <input type="text" name="address" class="form-control" placeholder="주소를 입력해주세요 :D" required>
+                </div>
+                
+                <br>
+                
+                <input class="btn btn-info btn-lg btn-block" type ="submit" value = "과제제출"></input>
+                <br><br>
+              </div>
+              
+              <div class="col-md-2 col-sm-1"></div>
+            <%end%>
+            <!--<div class="col-md-4 col-sm-12">-->
+              
+             
+            <!--  <br>-->
+            <!--  % if current_user.email=="admin@ptu.ac.kr"%>-->
+            <!--    <a href="/freeboard/upload" class="btn btn-info btn-lg btn-block" >글 작성</a>-->
+            <!--  %end%>-->
+            <!--</div>-->
+            
+            <!--<div class="col-md-8 col-sm-12">-->
+              
+            <!--</div>-->
+            
+            
+          </div><!--<div class="panel-body">-->
+        </div><!--<div class="panel panel-default">-->
+      </div><!--<div class="col-md-8 col-md-xs-8">-->
+      
+    <div class="col-md-2 col-md-xs-2" id="menu_font">
+      
+      <!--%= render "book/side" %>-->
+      
+    </div>
+    
+     <br> <br> <br>
+
+  </div><!--div class row-->
+</div><!--<div style="background-color:lightgray">-->

@@ -1,0 +1,84 @@
+
+
+<div style="background-color:lightgray; padding-top:150px;padding-bottom:300px" id="menu_font">
+  
+  <div class="row">
+    
+    <div class="col-md-2 col-md-xs-2"></div>
+      
+      <div class="col-md-8 col-md-xs-8" align="center">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            
+            <h2>N O T I C E</h2>
+            <hr>
+            <div class="col-md-4 col-sm-12">
+      
+              
+              <form action="/post/search" method="POST">
+                <div class="input-group" style="background:lightgray">
+                  <!--<span class="input-group-addon" id="basic-addon1">검색</span>-->
+                  <input type="text" name="searching_keyword" class="form-control" placeholder="1글자 이상 입력해주세요 :D" aria-describedby="basic-addon1">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">검색</button>
+                  </span>
+                </div>
+              </form>
+              
+              <br>
+              <% if current_user.email=="admin@ptu.ac.kr"%>
+                <a href="/post/write" class="btn btn-info btn-lg btn-block" >글 작성</a>
+              <%end%>
+            </div>
+            
+            <div class="col-md-8 col-sm-12">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>제목</th>
+                    <th>작성자</th>
+                    <th>작성 일시</th>
+                    <% if current_user.email=="admin@ptu.ac.kr"%>
+                      <th>수정-삭제</th>
+                    <%end%>
+                  </tr>
+                </thead>
+                
+                <tbody>
+                  <% Post.where("category = ?", "공지사항").reverse_each do |a| %>
+                  
+                    <tr>
+                      
+                        <td><%= a.id %></td>
+                        <td><a href="/post/view?id=<%= a.id %>"><%= a.title %></a></td>
+                        <td><%=a.user%></td>
+                        <td><%= a.created_at.in_time_zone("Seoul")%></td>
+                        <% if current_user.email=="admin@ptu.ac.kr"%>
+                        <td>
+                          <div class="btn-group">
+                            <a href="/post/delete?id=<%= a.id %>" class="btn btn-default btn-sm">삭제</a>
+                            <a href="/post/modify?id=<%= a.id %>" class="btn btn-default btn-sm">수정</a>
+                          </div>
+                        </td>
+                        <%end%>
+                    </tr>
+                  
+                  <% end %>
+                  
+   
+                </tbody>
+              </table>
+            </div>
+            
+            
+          </div><!--<div class="panel-body">-->
+        </div><!--<div class="panel panel-default">-->
+      </div><!--<div class="col-md-8 col-md-xs-8">-->
+      
+    <div class="col-md-2 col-md-xs-2" id="#side">
+       <!--%= render "book/side" %>-->
+    </div>
+    
+  </div><!--div class row-->
+</div><!--<div style="background-color:lightgray">-->

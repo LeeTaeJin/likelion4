@@ -1,0 +1,110 @@
+
+<div style="background-color:lightgray; padding-top:150px;padding-bottom:300px" id="menu_font">
+  
+  <div class="row">
+    
+    <div class="col-md-2 col-md-xs-2"></div>
+      
+      <div class="col-md-8 col-md-xs-8" align="center">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            
+            <h2>C O M M U N I T Y</h2>
+            <hr>
+            <div class="col-md-4 col-sm-12">
+              
+              <form action="/freeboard/search" method="POST">
+                <div class="input-group" style="background:lightgray">
+                  <!--<span class="input-group-addon" id="basic-addon1">검색</span>-->
+                  <input type="text" name="searching_keyword" class="form-control" placeholder="1글자 이상 입력해주세요 :D" aria-describedby="basic-addon1">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">검색</button>
+                  </span>
+                </div>
+              </form>
+              
+              <br>
+              
+              <a href="/community/write" class="btn btn-info btn-lg btn-block" >글쓰기</a>
+              
+              <br><!--과제 생성 버튼-->
+              <div class="list-group table-of-contents">
+                <a href="/community/main?posting='아이디어'" class="list-group-item">아이디어 게시판</a>
+                <a href="/community/main?posting='잡담'" class="list-group-item">잡담</a>
+              </div>
+              
+            </div>
+            
+            <div class="col-md-8 col-sm-12">
+              
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>카테고리</th>
+                    <th>제목</th>
+                    <th>작성자</th>
+                    <th>작성 일시</th>
+                    <th>-</th>
+                  
+                  </tr>
+                </thead>
+                
+                <tbody>
+                  <% if @posting == "all" %>
+                    <% Post.where("category = ? or category =?", "잡담", "아이디어").reverse_each do |a| %>
+                        <td><%= a.id %></td>
+                        <td><%= a.category%></td>
+                        <td><a href="/post/view?id=<%= a.id %>"><%= a.title %></a></td>
+                        <td><%=User.find(a.user).email%></td>
+                        <td><%= a.created_at.in_time_zone("Seoul")%></td>
+                        <% if current_user.email==User.find(a.user).email %>
+                        <td>
+                          <div class="btn-group">
+                            <a href="/post/delete?id=<%= a.id %>" class="btn btn-default btn-sm">삭제</a>
+                            <a href="/post/modify?id=<%= a.id %>" class="btn btn-default btn-sm">수정</a>
+                          </div>
+                        </td>
+                        <%end%><!--삭제 수정 이프-->
+                    
+                  
+                    <% end %><!--post.where-->
+                  
+                  <% else%>
+                    <% Post.where("category = ?", @posting).reverse_each do |a| %>
+                      <td><%= a.id %></td>
+                      <td><%= a.category%></td>
+                      <td><a href="/post/view?id=<%= a.id %>"><%= a.title %></a></td>
+                      <td><%=User.find(a.user).email%></td>
+                      <td><%= a.created_at.in_time_zone("Seoul")%></td>
+                      <% if current_user.email==User.find(a.user).email %>
+                      <td>
+                        <div class="btn-group">
+                          <a href="/post/delete?id=<%= a.id %>" class="btn btn-default btn-sm">삭제</a>
+                          <a href="/post/modify?id=<%= a.id %>" class="btn btn-default btn-sm">수정</a>
+                        </div>
+                      </td>
+                      <%end%><!--삭제 수정 이프-->
+                    
+                    <% end %><!--post.where-->
+                    <tr>
+                  <%end%>    
+                        
+                  
+   
+                </tbody>
+              </table>
+                 
+            </div>
+            
+            
+          </div><!--<div class="panel-body">-->
+        </div><!--<div class="panel panel-default">-->
+      </div><!--<div class="col-md-8 col-md-xs-8">-->
+      
+    <div class="col-md-2 col-md-xs-2" id="#side">
+       <!--%= render "book/side" %>-->
+    </div>
+    
+  </div><!--div class row-->
+</div><!--<div style="background-color:lightgray">-->

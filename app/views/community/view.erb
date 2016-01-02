@@ -1,0 +1,95 @@
+<div style="background-color:lightgray; padding-top:150px;padding-bottom:150px" id="menu_font">
+  
+  <div class="row">
+    
+    <div class="col-md-2 col-md-xs-2"></div>
+      
+      <div class="col-md-8 col-md-xs-8" align="center">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            
+            <h2>C O M M U N I T Y</h2>
+            <hr>
+            
+            
+              <div class="col-md-2 col-sm-1"></div>
+            
+              <div class="col-md-8 col-sm-10">
+                <div class="panel panel-default">
+                  
+                  <div class="panel-body">
+                    <h4><%= @view_post.title %></h4>
+                    <hr>
+                    
+                    <h5><pre style="border:0px; background:white " align="left" id="menu_font">
+                      <%= @view_post.content %>
+                    </pre></h5><br>
+                    
+                    <hr>
+                    
+                    <table class="table" style="background:white">
+                  
+                      <tbody>
+                        <% @view_post.replies.each do |r| %>
+                        <tr>
+                          <th><%= r.id %></th><!--User.where("id=?",r.user).email -->
+                          <td><%= r.content %></td>
+                          
+                          <% if current_user.id == r.user%>
+                          <td align="right"><!--삭제부분 -->
+                            <form action="/post/reply_delete" method="GET">
+                              <input type="submit" class="btn btn-danger btn-sm " value="삭제" >                               
+                              <input type="hidden" name="reply_id" value="%= r.id %>">
+                            </form>
+                          </td>
+                          <%end%>
+                        </tr>
+                        <%end%>
+                      </tbody>
+                    </table>
+                    
+                    <%= form_tag("/post/reply_write", method: "post") do %>
+                      <div class="input-group">
+                       
+                        <input type="text" name="rp_content" class="form-control" placeholder="바르고 고운말 :D">
+                        
+                        <span class="input-group-btn">
+                          <input type="hidden" name="post_id" value="<%= @view_post.id %>">
+                          <input type="hidden" name="user" value="<%= current_user.id %>">
+                          <input type="submit" class="btn btn-default" value="달기">
+                         
+                          <!--<button class="btn btn-default" type="button">달기</button>-->
+                        </span>
+                      </div><!-- /input-group -->
+                    <%end%>
+                    
+                  </div>
+                  
+                </div>
+                
+            </div>
+            <div class="col-md-2 col-sm-1">
+            <% if current_user.email=="admin@ptu.ac.kr"%>
+              <td>
+              
+                <a href="/post/delete?id=<%= @view_post.id %>" class="btn btn-default btn-sm btn-block">삭제</a>
+                <a href="/post/modify?id=<%= @view_post.id %>" class="btn btn-info btn-sm btn-block">수정</a>
+              
+              </td>
+            <%end%>
+  
+            </div>
+          </div><!--<div class="panel-body">-->
+        </div><!--<div class="panel panel-default">-->
+      </div><!--<div class="col-md-8 col-md-xs-8">-->
+      
+    <div class="col-md-2 col-md-xs-2" id="menu_font">
+      
+      <!--%= render "book/side" %>-->
+      
+    </div>
+    
+     <br> <br> <br>
+
+  </div><!--div class row-->
+</div><!--<div style="background-color:lightgray">-->
