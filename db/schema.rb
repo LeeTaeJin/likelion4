@@ -14,7 +14,7 @@
 ActiveRecord::Schema.define(version: 20160102074735) do
 
   create_table "homeworks", force: :cascade do |t|
-    t.string   "post_num"
+    t.string   "post_id"
     t.string   "user"
     t.string   "content"
     t.string   "href"

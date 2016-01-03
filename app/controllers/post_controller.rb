@@ -102,9 +102,8 @@ class PostController < ApplicationController
     
     def search #검색
       @searching_keyword=params[:searching_keyword]
-      @search_output=Post.where("title LIKE ? or fb_content LIKE ?", "%#{@searching_keyword}%", "%#{@searching_keyword}%")
+      @search_output=Post.where("category=?","공지사항").where("title LIKE ? or content LIKE ?", "%#{@searching_keyword}%", "%#{@searching_keyword}%")
     end
-    # 리플 삭제 끝
     
 
 

@@ -33,8 +33,8 @@ class HomeworkController < ApplicationController
     new=Homework.new
     new.content=params[:content]
     new.href=params[:address]
-    new.user=current_user.email
-    new.post_num=params[:homework_post]
+    new.user=current_user.id
+    new.post_id=params[:homework_post]
     new.save
     
     redirect_to action: "main", view_post: params[:homework_post]

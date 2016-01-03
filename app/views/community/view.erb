@@ -32,7 +32,7 @@
                       <tbody>
                         <% @view_post.replies.each do |r| %>
                         <tr>
-                          <th><%= r.id %></th><!--User.where("id=?",r.user).email -->
+                          <th><%= User.find(r.user).email %></th><!--User.where("id=?",r.user).email -->
                           <td><%= r.content %></td>
                           
                           <% if current_user.id == r.user%>
