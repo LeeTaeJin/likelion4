@@ -63,12 +63,24 @@
                   <li class=""><a href="/"  style="color:#D5D5D5">HOME</a></li>
                   
                   <li class=""><a href="/post/main"  style="color:#D5D5D5">NOTICE</a></li>
-                  <!--<li class=""><a href="#section-works"  style="color:#D5D5D5">문의하기</a></li>-->
-                  <% if Post.where("category=?", "과제").count == 0 %>
-                    <li class=""><a href="/homework/main?view_post=등록된 과제가 없습니다."  style="color:#D5D5D5">HOMEWORK</a></li>
-                  <%else%>
-                    <li class=""><a href="/homework/main?view_post=<%=Post.where("category=?", "과제").last.id%>"  style="color:#D5D5D5">HOMEWORK</a></li>
+                  
+                  <% if Project.count == 0%>
+                    <li class=""><a href="/project/main?view_post=등록된 프로젝트가 없습니다."  style="color:#D5D5D5">PROJECT</a></li>
+                  <% else%>
+                    <li class=""><a href="/project/main?view_post=<%=Project.last.id%>"  style="color:#D5D5D5">PROJECT</a></li>
                   <%end%>
+                  
+                  
+                  
+                  <!--homework-->
+                  <!--% if Post.where("category=?", "과제").count == 0 %>-->
+                  <!--  <li class=""><a href="/homework/main?view_post=등록된 과제가 없습니다."  style="color:#D5D5D5">HOMEWORK</a></li>-->
+                  <!--%else%>-->
+                  <!--  <li class=""><a href="/homework/main?view_post=%=Post.where("category=?", "과제").last.id%>"  style="color:#D5D5D5">HOMEWORK</a></li>-->
+                  <!--%end%>-->
+                  <!--homework-->
+                  
+                  
                   <li class=""><a href="/community/main?posting=all"  style="color:#D5D5D5">COMMUNITY</a></li>
                   <!--<li class=""><a href="#section-contact"><button type="button" class="btn btn-default btn-circle btn-lg"><i class="glyphicon glyphicon-log-out"></i></button></a></li>-->
                 </ul>
@@ -120,16 +132,34 @@
   <footer>
     <center>
       
-      <div style="background-image:url(http://cfile24.uf.tistory.com/image/20191A4E4E9963D916B98A); background-size: cover; height:600px" id="menu_font">      
+      <div style="background-image:url(http://cfile24.uf.tistory.com/image/20191A4E4E9963D916B98A); background-size: cover; height:700px" id="menu_font">      
         <div class="row">
-          <div class="col-md-6 col-sm-6">
+          <div class="col-md-7 col-sm-7">
           </div>
           
-          <div class="col-md-6 col-sm-6" align="left">
-            <br><br>
+          <div class="col-md-5 col-sm-5" align="left">
+            <a data-toggle="collapse" href="#admin" aria-expanded="false" aria-controls="collapseExample" class="btn btn-default" >예쁘고 멋있는 운영진 소개</a><br><br>
+             <div class="collapse" id="admin">
+               <img class="img-rounded" style="height:300px"src="https://scontent.xx.fbcdn.net/hphotos-xtf1/v/t1.0-9/11219314_504552769705551_2628361946956142498_n.jpg?oh=017e36c0e570210e35857a2948bde935&oe=57490FC1">
+                <br><br>
+                <mark>박지연</mark>
+                <mark>엄혜선</mark>
+                <mark>조혜진</mark>
+                <mark>이병호</mark>
+                <mark>이태진</mark>
+                <mark>김수한</mark>
+                <mark>박상철</mark>
+                <mark>윤성중</mark>
+                <mark>홍석민</mark>
+                <mark>이건희</mark>
+                <mark>김현민</mark>
+               <br>
+               <br>
+             </div>
+            
              <!-- Facebook Badge START --><a href="https://www.facebook.com/pages/%EB%A9%8B%EC%9F%81%EC%9D%B4-%EC%82%AC%EC%9E%90%EC%B2%98%EB%9F%BC-at-%ED%8F%89%ED%83%9D%EB%8C%80%ED%95%99%EA%B5%90/920607294681671" title="&#xba4b;&#xc7c1;&#xc774; &#xc0ac;&#xc790;&#xcc98;&#xb7fc; at &#xd3c9;&#xd0dd;&#xb300;&#xd559;&#xad50;" style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" target="_TOP">멋쟁이 사자처럼 at 평택대학교</a><span style="font-family: &#039;lucida grande&#039;,tahoma,verdana,arial,sans-serif;font-size: 11px;line-height: 16px;font-variant: normal;font-style: normal;font-weight: normal;color: #555555;text-decoration: none;">&nbsp;|&nbsp;</span><a href="https://ko-kr.facebook.com/advertising" title="&#xd68c;&#xc6d0;&#xb2d8;&#xb9cc;&#xc758; &#xc704;&#xc82f;&#xc744; &#xb9cc;&#xb4e4;&#xc5b4;&#xbcf4;&#xc138;&#xc694;!" style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" target="_TOP">회원님 페이지도 홍보하기</a><br /><a href="https://www.facebook.com/pages/%EB%A9%8B%EC%9F%81%EC%9D%B4-%EC%82%AC%EC%9E%90%EC%B2%98%EB%9F%BC-at-%ED%8F%89%ED%83%9D%EB%8C%80%ED%95%99%EA%B5%90/920607294681671" title="&#xba4b;&#xc7c1;&#xc774; &#xc0ac;&#xc790;&#xcc98;&#xb7fc; at &#xd3c9;&#xd0dd;&#xb300;&#xd559;&#xad50;" target="_TOP"><img class="img" src="https://badge.facebook.com/badge/920607294681671.2069.948826706.png" style="border: 0px;" alt="" /></a><!-- Facebook Badge END -->
              <br><br>
-             <a href="#" class="btn btn-default" >운영진 소개</a>
+             
           </div>
         
         </div>

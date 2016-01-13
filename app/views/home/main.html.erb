@@ -1,4 +1,4 @@
-<div id="menu_font" style="padding-top:100px; padding-bottom:50px">
+<div class="contain "id="menu_font" style="padding-top:100px;padding-bottom:50px">
   
   <div style="background-color:white; padding:50px">
     <center>
@@ -10,7 +10,8 @@
 
 </div><!--<div style="background-color:lightgray">-->
 
-<div style="background-color:black; padding:50px" id="menu_font">
+
+<div style="background-color:black; padding:100px" id="menu_font">
   <div class="row">
     <div class="col-md-4">
       
@@ -22,12 +23,12 @@
              
             <div class="list-group" align="left">
               <% Post.where("category = ?", "공지사항").last(5).reverse_each do |f|%>
-              <a href="/freeboard/upload_view/<%=f.id%>" class="list-group-item"><%=f.id%> - <%=f.title%></a>
+              <a href="/post/view/<%=f.id%>" class="list-group-item"><%=f.id%> - <%=f.title%></a>
               <%end%>
             </div>
             
             <div align="right">
-              <a class="btn btn-default btn-sm" href="/freeboard/freeboards">더보기</a> 
+              <a class="btn btn-default btn-sm" href="/post/main">더보기</a> 
             </div>      
           </div>
         </div>
@@ -42,12 +43,12 @@
              
             <div class="list-group" align="left">
               <% Post.where("category = ?", "아이디어").last(5).reverse_each do |f|%>
-              <a href="/freeboard/upload_view/<%=f.id%>" class="list-group-item"><%=f.id%> - <%=f.title%></a>
+              <a href="/community/view/<%=f.id%>" class="list-group-item"><%=f.id%> - <%=f.title%></a>
               <%end%>
             </div>
             
             <div align="right">
-              <a class="btn btn-default btn-sm" href="/freeboard/freeboards">더보기</a> 
+              <a class="btn btn-default btn-sm" href="/community/main?posting=아이디어">더보기</a> 
             </div>      
           </div>
         </div>
@@ -63,13 +64,13 @@
             <hr>
              
             <div class="list-group" align="left">
-              <% Post.where("category = ?", "공지사항").last(5).reverse_each do |f|%>
-              <a href="/freeboard/upload_view/<%=f.id%>" class="list-group-item"><%=f.id%> - <%=f.title%></a>
+              <% Project.last(5).reverse_each do |f|%>
+              <a href="/project/main?view_post=<%=f.id%>" class="list-group-item"><%=f.id%> - <%=f.title%></a>
               <%end%>
             </div>
             
             <div align="right">
-              <a class="btn btn-default btn-sm" href="/freeboard/freeboards">더보기</a> 
+              <a class="btn btn-default btn-sm" href="/project/main?view_post=<%=Project.last.id%>">더보기</a> 
             </div>      
           </div>
         </div>

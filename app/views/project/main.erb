@@ -1,0 +1,96 @@
+
+<div style="background-color:black; padding-top:150px;padding-bottom:300px" id="menu_font">
+  
+  <div class="row">
+    
+    <div class="col-md-2 col-md-xs-2"></div>
+      
+      <div class="col-md-8 col-md-xs-8" align="center">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h2>P R O J E C T</h2>
+            <hr>
+            
+            <div class="row">
+              <div class="col-md-4 col-sm-4">
+                
+                <a href="/project/write" class="btn btn-info btn-lg btn-block" >프로젝트 등록</a>
+                <br>
+                
+                <div class="list-group table-of-contents" align="left">
+                  <% Project.all.each do |p|%>
+                    <a href="/project/main?view_post=<%=p.id%>" class="list-group-item"><span class="badge"><%=p.id%></span> <%=p.title%></a>
+                  <%end%>
+                </div>
+                
+              </div>
+              
+              <div class="col-md-8 col-md-8">
+                
+                <% if Project.count == 0 %><!--프로젝트가 등록된게 없으면-->
+                  <div class="panel panel-default">
+                    <div class="panel-body">
+                      <h4><%= @view_post%></h4>
+                      <hr>
+                      
+                      <h5><pre style="border:0px; background:white " align="left" id="menu_font">
+                        <%= @view_post%>
+                      </pre></h5><br>
+                    </div>
+                  </div>
+                <%else%>
+                  <div class="panel panel-default">
+                    <div class="panel-body">
+                      <h4><%= @view_post.title %> <small>_ <%=User.find(@view_post.writer).email%></small></h4>
+                      <hr>
+                      
+                      <h5><pre style="border:0px; background:white " align="left" id="menu_font">
+                        <%= @view_post.content %>
+                      </pre></h5><br>
+                      
+                      <div class="caption">
+                      
+                        <table class="table" style="background:white">
+                      
+                          <tbody>
+                            
+                            <tr>
+                              <th>팀 구성</th>
+                              <td><u><%=@view_post.team_leader%></u>, <%=@view_post.team_member%></td>
+                            </tr>
+                            
+                            
+                            <tr>
+                              <th>주소</th>
+                              <td><%=@view_post.address%></td>
+                            </tr>
+                            <tr>
+                              <th>프로젝트 등록일</th>
+                              <td><%= @view_post.created_at.in_time_zone("Seoul")%></td>
+                            </tr>
+                            
+                          </tbody>
+                        </table>
+                    
+                      </div>
+                      
+                    </div>
+                  </div>
+                <%end%>
+              </div>
+              
+            </div><!--div class=row-->
+            
+          </div>
+          
+          
+        </div><!--<div class="panel-body">-->
+      </div><!--<div class="panel panel-default">-->
+    </div><!--<div class="col-md-8 col-md-xs-8">-->
+      
+    <div class="col-md-2 col-md-xs-2" id="#side">
+       <!--%= render "book/side" %>-->
+    </div>
+    
+  </div><!--div class row-->
+</div><!--<div style="background-color:lightgray">-->
