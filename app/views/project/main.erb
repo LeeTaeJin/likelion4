@@ -13,10 +13,10 @@
             
             <div class="row">
               <div class="col-md-4 col-sm-4">
-                
-                <a href="/project/write" class="btn btn-info btn-lg btn-block" >프로젝트 등록</a>
-                <br>
-                
+                <% if current_user%>
+                  <a href="/project/write" class="btn btn-info btn-lg btn-block" >프로젝트 등록</a>
+                  <br>
+                <%end%>
                 <div class="list-group table-of-contents" align="left">
                   <% Project.all.each do |p|%>
                     <a href="/project/main?view_post=<%=p.id%>" class="list-group-item"><span class="badge"><%=p.id%></span> <%=p.title%></a>
