@@ -16,10 +16,15 @@
                 <% if current_user%>
                   <a href="/project/write" class="btn btn-info btn-lg btn-block" >프로젝트 등록</a>
                   <br>
+                <%else%>
+                  <button class="btn btn-info btn-lg btn-block" disabled>로그인이 필요합니다.</button>
+                  <br>
+                  로그인을 하지 않으시면 프로젝트 열람만 가능합니다.<br>
+                  프로젝트 등록을 원하시면 로그인을 해주세요.<br><br>
                 <%end%>
                 <div class="list-group table-of-contents" align="left">
                   <% Project.all.each do |p|%>
-                    <a href="/project/main?view_post=<%=p.id%>" class="list-group-item"><span class="badge"><%=p.id%></span> <%=p.title%></a>
+                    <a href="/project/main?view_post=<%=p.id%>" class="list-group-item">No.<%=p.id%> ; <%=p.title%></a>
                   <%end%>
                 </div>
                 
@@ -56,7 +61,7 @@
                             
                             <tr>
                               <th>팀 구성</th>
-                              <td><u><%=@view_post.team_leader%></u>, <%=@view_post.team_member%></td>
+                              <td>팀장 : <%=@view_post.team_leader%><br>팀원 : <%=@view_post.team_member%></td>
                             </tr>
                             
                             

@@ -70,7 +70,12 @@
             </div>
             
             <div align="right">
-              <a class="btn btn-default btn-sm" href="/project/main?view_post=<%=Project.last.id%>">더보기</a> 
+              <% if Project.count == 0%>
+                <a class="btn btn-default btn-sm" href="/project/main?view_post=등록된 프로젝트가 없습니다.">더보기</a> 
+              <% else%>
+                <a class="btn btn-default btn-sm" href="/project/main?view_post=<%=Project.last.id%>">더보기</a> 
+              <%end%>
+              
             </div>      
           </div>
         </div>

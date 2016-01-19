@@ -60,7 +60,7 @@
                         <td><a href="/community/view?id=<%= a.id %>"><%= a.title %></a></td>
                         <td><%=User.find(a.user).email%></td>
                         <td><%= a.created_at.in_time_zone("Seoul")%></td>
-                        <% if current_user.email==User.find(a.user).email %>
+                        <% if current_user.id==a.user %>
                         <td>
                           <div class="btn-group">
                             <a href="/post/delete?id=<%= a.id %>" class="btn btn-default btn-sm">삭제</a>
@@ -80,7 +80,7 @@
                       <td><a href="/post/view?id=<%= a.id %>"><%= a.title %></a></td>
                       <td><%=User.find(a.user).email%></td>
                       <td><%= a.created_at.in_time_zone("Seoul")%></td>
-                      <% if current_user.email==User.find(a.user).email %>
+                      <% if current_user.id==a.user %>
                       <td>
                         <div class="btn-group">
                           <a href="/post/delete?id=<%= a.id %>" class="btn btn-default btn-sm">삭제</a>

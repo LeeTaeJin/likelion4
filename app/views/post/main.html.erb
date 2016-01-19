@@ -52,7 +52,7 @@
                       
                         <td><%= a.id %></td>
                         <td><a href="/post/view?id=<%= a.id %>"><%= a.title %></a></td>
-                        <td><%=a.user%></td>
+                        <td><%=User.find(a.user).email%></td><!--네임으로 수정해야함-->
                         <td><%= a.created_at.in_time_zone("Seoul")%></td>
                         <% if current_user.email=="admin@ptu.ac.kr"%>
                         <td>

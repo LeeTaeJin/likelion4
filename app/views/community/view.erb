@@ -39,7 +39,7 @@
                           <td align="right"><!--삭제부분 -->
                             <form action="/post/reply_delete" method="GET">
                               <input type="submit" class="btn btn-danger btn-sm " value="삭제" >                               
-                              <input type="hidden" name="reply_id" value="%= r.id %>">
+                              <input type="hidden" name="reply_id" value="<%= r.id %>">
                             </form>
                           </td>
                           <%end%>
@@ -69,11 +69,11 @@
                 
             </div>
             <div class="col-md-2 col-sm-1">
-            <% if current_user.email=="admin@ptu.ac.kr"%>
+            <% if (current_user.email=="admin@ptu.ac.kr") or (current_user.id == @view_post.user) %>
               <td>
               
-                <a href="/post/delete?id=<%= @view_post.id %>" class="btn btn-default btn-sm btn-block">삭제</a>
-                <a href="/post/modify?id=<%= @view_post.id %>" class="btn btn-info btn-sm btn-block">수정</a>
+                <a href="/community/delete?id=<%= @view_post.id %>" class="btn btn-default btn-sm btn-block">삭제</a>
+                <a href="/community/modify?id=<%= @view_post.id %>" class="btn btn-info btn-sm btn-block">수정</a>
               
               </td>
             <%end%>

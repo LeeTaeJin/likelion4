@@ -28,14 +28,16 @@ class PostController < ApplicationController
   def delete #삭제
         
         fb_delete= Post.find(params[:id])
-        
-        
-        # if fb_delete.fb_user_id == current_user.id
+        @category=fb_delete.category
+       
+        fb_delete.destroy
             
-            fb_delete.destroy
-                
+        if @category=="공지사항"
             redirect_to '/post/main'
-
+        else
+          redirect_to '/community/main?posting=all'
+        end
+        
         # end
   end
     
@@ -57,8 +59,12 @@ class PostController < ApplicationController
           fb_modify.content = params[:md_content]
           fb_modify.title = params[:md_title]
           fb_modify.save
-              
-          redirect_to '/post/main'
+          
+          if fb_modify.category == "공지사항"    
+            redirect_to '/post/main'
+          else
+            redirect_to '/community/main?posting=all'
+          end
       # else
            
           # redirect_to :back
