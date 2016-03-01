@@ -18,7 +18,7 @@
                 <div class="panel panel-default">
                   
                   <div class="panel-body">
-                    <h4><%= @view_post.title %></h4>
+                    <h4><%= @view_post.title %> <small>_ <%=User.find(@view_post.user).name%></small></h4>
                     <hr>
                     
                     <h5><pre style="border:0px; background:white " align="left" id="menu_font">
@@ -32,43 +32,49 @@
                       <tbody>
                         <% @view_post.replies.each do |r| %>
                         <tr>
-                          <th><%= User.find(r.user).email%></th><!--User.where("id=?",r.user).email -->
+                          <th><%= User.find(r.user).name%></th><!--User.where("id=?",r.user).email -->
                           <td><%= r.content %></td>
-                          
-                          <% if current_user.id == r.user%>
-                            <td align="right"><!--삭제부분 -->
-                              <form action="/post/reply_delete" method="GET">
-                                <input type="submit" class="btn btn-danger btn-sm " value="삭제" >                               
-                                <input type="hidden" name="reply_id" value="<%= r.id %>">
-                              </form>
-                            </td>
+                          <% if current_user%>
+                            <% if current_user.id == r.user%>
+                              <td align="right"><!--삭제부분 -->
+                                <form action="/post/reply_delete" method="GET">
+                                  <input type="submit" class="btn btn-danger btn-sm " value="삭제" >                               
+                                  <input type="hidden" name="reply_id" value="<%= r.id %>">
+                                </form>
+                              </td>
+                            <%end%>
                           <%end%>
                         </tr>
                         <%end%>
                       </tbody>
                     </table>
                     
-                    <%= form_tag("/post/reply_write", method: "post") do %>
-                      <div class="input-group">
-                       
-                        <input type="text" name="rp_content" class="form-control" placeholder="바르고 고운말 :D">
-                        
-                        <span class="input-group-btn">
-                          <input type="hidden" name="post_id" value="<%= @view_post.id %>">
-                          <input type="hidden" name="user" value="<%= current_user.id %>">
-                          <input type="submit" class="btn btn-default" value="달기">
+                    <%if current_user%>
+                      <%= form_tag("/post/reply_write", method: "post") do %>
+                        <div class="input-group">
                          
-                          <!--<button class="btn btn-default" type="button">달기</button>-->
-                        </span>
-                      </div><!-- /input-group -->
-                    <%end%>
+                          <input type="text" name="rp_content" class="form-control" placeholder="바르고 고운말 :D">
+                          
+                          <span class="input-group-btn">
+                            <input type="hidden" name="post_id" value="<%= @view_post.id %>">
+                            <input type="hidden" name="user" value="<%= current_user.id %>">
+                            <input type="submit" class="btn btn-default" value="달기">
+                           
+                            <!--<button class="btn btn-default" type="button">달기</button>-->
+                          </span>
+                        </div><!-- /input-group -->
+                      <%end%>
                     
+                    <%else%>
+                      <button class="btn btn-info btn-block" disabled>댓글을 쓰기위해서는 로그인이 필요합니다.</button>
+                    <%end%>
                   </div>
                   
                 </div>
                 
             </div>
             <div class="col-md-2 col-sm-1">
+            <% if current_user%>
             <% if current_user.email=="admin@ptu.ac.kr"%>
               <td>
               
@@ -77,7 +83,7 @@
               
               </td>
             <%end%>
-  
+            <%end%>
             </div>
           </div><!--<div class="panel-body">-->
         </div><!--<div class="panel panel-default">-->

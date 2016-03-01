@@ -1,6 +1,6 @@
 class PostController < ApplicationController
   
-  before_action :authenticate_user!, only: [:main, :write, :view, :delete, :modify, :modify_action, :reply_write, :reply_delete, :search]
+  before_action :authenticate_user!, only: [:write, :delete, :modify, :modify_action, :reply_write, :reply_delete, :search]
     
   def main
   end

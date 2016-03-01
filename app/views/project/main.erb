@@ -46,7 +46,7 @@
                 <%else%>
                   <div class="panel panel-default">
                     <div class="panel-body">
-                      <h4><%= @view_post.title %> <small>_ <%=User.find(@view_post.writer).email%></small></h4>
+                      <h4><%= @view_post.title %> <small>_ <%=User.find(@view_post.writer).name%></small></h4>
                       <hr>
                       
                       <h5><pre style="border:0px; background:white " align="left" id="menu_font">

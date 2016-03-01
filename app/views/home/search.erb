@@ -1,0 +1,180 @@
+
+<div style="background-color:black; padding-top:150px;padding-bottom:150px" id="menu_font">
+  
+  <div class="row">
+    
+    <div class="col-md-2 col-md-xs-2"></div>
+      
+      <div class="col-md-8 col-md-xs-8" align="center">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            
+            <h3>'<%=@searching_keyword%>'에 대한 검색 결과 입니다.</h3>
+             
+            <hr>
+            
+            <div class="row">
+              
+              <div class="col-md-4">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">NOTICE</h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                    <% if defined?(@search_output_post)%>
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            
+                            <th>제목</th>
+                            <th>작성자</th>
+                            <th>작성 일시</th>
+                            
+                          
+                          </tr>
+                        </thead>
+                        
+                        <tbody>
+                          <% @search_output_post.reverse_each do |p|%>
+                            
+                            <tr>
+                              
+                                <td><%= p.id %></td>
+                                
+                                <td><a href="/post/view?id=<%= p.id %>"><%= p.title %></a></td>
+                                <td><%=User.find(p.user).name%></td>
+                                <td><%= p.created_at.in_time_zone("Seoul").month%>월 <%= p.created_at.in_time_zone("Seoul").day%>일</td>
+                                
+                            </tr>
+                          <% end %>
+                        </tbody>
+                      </table>
+                    <% else %>
+                      검색 결과가 없습니다.
+                    <%end%>
+         
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-4">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">IDEA</h3>
+                  </div>
+                  <div class="panel-body">
+                    <% if defined?(@search_output_idea)%>
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            
+                            <th>제목</th>
+                            <th>작성자</th>
+                            <th>작성 일시</th>
+                            
+                          
+                          </tr>
+                        </thead>
+                        
+                        <tbody>
+                          <% @search_output_idea.reverse_each do |p|%>
+                            
+                            <tr>
+                              
+                                <td><%= p.id %></td>
+                                
+                                <td><a href="/community/view?id=<%= p.id %>"><%= p.title %></a></td>
+                                <td><%=User.find(p.user).name%></td>
+                                <td><%= p.created_at.in_time_zone("Seoul").month%>월 <%= p.created_at.in_time_zone("Seoul").day%>일</td>
+                                
+                            </tr>
+                          <% end %>
+                        </tbody>
+                      </table>
+                    <% else %>
+                      검색 결과가 없습니다.
+                    <%end%>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-4">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">PROJECT</h3>
+                  </div>
+                  <div class="panel-body">
+                    <% if defined?(@search_output_project)%>
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            
+                            <th>제목</th>
+                            <th>작성자</th>
+                            <th>작성 일시</th>
+                            
+                          
+                          </tr>
+                        </thead>
+                        
+                        <tbody>
+                          <% @search_output_project.reverse_each do |p|%>
+                            
+                            <tr>
+                              
+                                <td><%= p.id %></td>
+                                
+                                <td><a href="/project/main?view_post=<%= p.id %>"><%= p.title %></a></td>
+                                <td><%=User.find(p.writer).name%></td>
+                                <td><%= p.created_at.in_time_zone("Seoul").month%>월 <%= p.created_at.in_time_zone("Seoul").day%>일</td>
+                                
+                            </tr>
+                          <% end %>
+                        </tbody>
+                      </table>
+                    <% else %>
+                      검색 결과가 없습니다.
+                    <%end%>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            
+            
+          </div><!--<div class="panel-body">-->
+        </div><!--<div class="panel panel-default">-->
+      </div><!--<div class="col-md-8 col-md-xs-8">-->
+      
+    <div class="col-md-2 col-md-xs-2" id="menu_font">
+      
+    </div>
+    
+  </div><!--div class row-->
+</div><!--<div style="background-color:lightgray">-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

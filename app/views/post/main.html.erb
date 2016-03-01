@@ -12,26 +12,34 @@
             
             <h2>N O T I C E</h2>
             <hr>
+            <% if current_user %>
             <div class="col-md-4 col-sm-12">
       
               
-              <form action="/post/search" method="POST">
-                <div class="input-group" style="background:lightgray">
+              <!--<form action="/post/search" method="POST">-->
+              <!--  <div class="input-group" style="background:lightgray">-->
                   <!--<span class="input-group-addon" id="basic-addon1">검색</span>-->
-                  <input type="text" name="searching_keyword" class="form-control" placeholder="1글자 이상 입력해주세요 :D" aria-describedby="basic-addon1">
-                  <span class="input-group-btn">
-                    <button class="btn btn-default" type="submit">검색</button>
-                  </span>
-                </div>
-              </form>
+              <!--    <input type="text" name="searching_keyword" class="form-control" placeholder="1글자 이상 입력해주세요 :D" aria-describedby="basic-addon1">-->
+              <!--    <span class="input-group-btn">-->
+              <!--      <button class="btn btn-default" type="submit">검색</button>-->
+              <!--    </span>-->
+              <!--  </div>-->
+              <!--</form>-->
               
               <br>
-              <% if current_user.email=="admin@ptu.ac.kr"%>
-                <a href="/post/write" class="btn btn-info btn-lg btn-block" >글 작성</a>
-              <%end%>
+              
+                <% if current_user.email=="admin@ptu.ac.kr"%>
+                  <a href="/post/write" class="btn btn-info btn-lg btn-block" >글 작성</a>
+                <%end%>
+              
             </div>
+            <%end%>
             
+            <%if current_user%>
             <div class="col-md-8 col-sm-12">
+            <%else%>
+            <div class="col-md-12 col-sm-12">
+            <%end%>
               <table class="table">
                 <thead>
                   <tr>
@@ -39,8 +47,10 @@
                     <th>제목</th>
                     <th>작성자</th>
                     <th>작성 일시</th>
-                    <% if current_user.email=="admin@ptu.ac.kr"%>
-                      <th>수정-삭제</th>
+                    <%if current_user%>
+                      <% if current_user.email=="admin@ptu.ac.kr"%>
+                        <th>수정-삭제</th>
+                      <%end%>
                     <%end%>
                   </tr>
                 </thead>
@@ -52,8 +62,9 @@
                       
                         <td><%= a.id %></td>
                         <td><a href="/post/view?id=<%= a.id %>"><%= a.title %></a></td>
-                        <td><%=User.find(a.user).email%></td><!--네임으로 수정해야함-->
+                        <td><%=User.find(a.user).name%></td><!--네임으로 수정해야함-->
                         <td><%= a.created_at.in_time_zone("Seoul")%></td>
+                        <%if current_user%>
                         <% if current_user.email=="admin@ptu.ac.kr"%>
                         <td>
                           <div class="btn-group">
@@ -61,6 +72,7 @@
                             <a href="/post/modify?id=<%= a.id %>" class="btn btn-default btn-sm">수정</a>
                           </div>
                         </td>
+                        <%end%>
                         <%end%>
                     </tr>
                   
