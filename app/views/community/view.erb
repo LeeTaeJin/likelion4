@@ -18,7 +18,7 @@
                 <div class="panel panel-default">
                   
                   <div class="panel-body">
-                    <h4><%= @view_post.title %></h4>
+                    <h4><%= @view_post.title %><small>_<%= User.find(@view_post.user).name %></small></h4>
                     <hr>
                     
                     <h5><pre style="border:0px; background:white " align="left" id="menu_font">
@@ -32,7 +32,7 @@
                       <tbody>
                         <% @view_post.replies.each do |r| %>
                         <tr>
-                          <th><%= User.find(r.user).email %></th><!--User.where("id=?",r.user).email -->
+                          <th><%= User.find(r.user).name %></th><!--User.where("id=?",r.user).email -->
                           <td><%= r.content %></td>
                           
                           <% if current_user.id == r.user%>
@@ -72,8 +72,8 @@
             <% if (current_user.email=="admin@ptu.ac.kr") or (current_user.id == @view_post.user) %>
               <td>
               
-                <a href="/community/delete?id=<%= @view_post.id %>" class="btn btn-default btn-sm btn-block">삭제</a>
-                <a href="/community/modify?id=<%= @view_post.id %>" class="btn btn-info btn-sm btn-block">수정</a>
+                <a href="/post/delete?id=<%= @view_post.id %>" class="btn btn-default btn-sm btn-block">삭제</a>
+                <a href="/post/modify?id=<%= @view_post.id %>" class="btn btn-info btn-sm btn-block">수정</a>
               
               </td>
             <%end%>

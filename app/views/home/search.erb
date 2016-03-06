@@ -15,14 +15,14 @@
             
             <div class="row">
               
-              <div class="col-md-4">
+              <div class="col-md-12 col-sm-12">
                 <div class="panel panel-default">
                   <div class="panel-heading">
                     <h3 class="panel-title">NOTICE</h3>
                   </div>
                   <div class="panel-body">
                     
-                    <% if defined?(@search_output_post)%>
+                    <% if (@search_output_post.exists?)%>
                       <table class="table">
                         <thead>
                           <tr>
@@ -59,13 +59,13 @@
                 </div>
               </div>
               
-              <div class="col-md-4">
+              <div class="col-md-12 col-sm-12">
                 <div class="panel panel-default">
                   <div class="panel-heading">
                     <h3 class="panel-title">IDEA</h3>
                   </div>
                   <div class="panel-body">
-                    <% if defined?(@search_output_idea)%>
+                    <% if (@search_output_idea.exists?)%>
                       <table class="table">
                         <thead>
                           <tr>
@@ -101,13 +101,13 @@
                 </div>
               </div>
               
-              <div class="col-md-4">
+              <div class="col-md-12 col-sm-12">
                 <div class="panel panel-default">
                   <div class="panel-heading">
                     <h3 class="panel-title">PROJECT</h3>
                   </div>
                   <div class="panel-body">
-                    <% if defined?(@search_output_project)%>
+                    <% if (@search_output_project.exists?)%>
                       <table class="table">
                         <thead>
                           <tr>

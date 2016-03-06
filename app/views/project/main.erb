@@ -39,7 +39,7 @@
                       <hr>
                       
                       <h5><pre style="border:0px; background:white " align="left" id="menu_font">
-                        <%= @view_post%>
+                        <br><%= @view_post%>
                       </pre></h5><br>
                     </div>
                   </div>
@@ -50,7 +50,7 @@
                       <hr>
                       
                       <h5><pre style="border:0px; background:white " align="left" id="menu_font">
-                        <%= @view_post.content %>
+                        <br><%= @view_post.content %>
                       </pre></h5><br>
                       
                       <div class="caption">
@@ -60,19 +60,50 @@
                           <tbody>
                             
                             <tr>
-                              <th>팀 구성</th>
+                              <th style="width:130px">팀 구성</th>
                               <td>팀장 : <%=@view_post.team_leader%><br>팀원 : <%=@view_post.team_member%></td>
                             </tr>
                             
                             
                             <tr>
                               <th>주소</th>
-                              <td><%=@view_post.address%></td>
+                              <td>
+                                <div class="input-group">
+                                  <span class="input-group-addon" id="basic-addon1"><%=@view_post.address%></span>
+                                  <span class="input-group-btn">
+                                    <a href="<%=@view_post.address%>"><button class="btn btn-default" type="button">이동하기</button></a>
+                                  </span>
+                                </div>
+                              </td>
+                              
+                              
                             </tr>
                             <tr>
                               <th>프로젝트 등록일</th>
                               <td><%= @view_post.created_at.in_time_zone("Seoul")%></td>
                             </tr>
+                            
+                            <% if current_user%>
+                              <% if @view_post.writer == current_user.id%>
+                                <tr>
+                                  <th style="width:130px">수정-삭제</th>
+                                  <td>
+                                    
+                                    <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                                      <div class="btn-group" role="group">
+                                        <a href="/project/delete?id=<%= @view_post.id %>" type="button" class="btn btn-default">삭제</a>
+                                      </div>
+                                      <div class="btn-group" role="group">
+                                        <a href="/project/modify?id=<%= @view_post.id %>" type="button" class="btn btn-info">수정</a>
+                                      </div>
+                                    </div>
+                                    
+                                     
+                                     
+                                  </td>
+                                </tr>
+                              <%end%>
+                            <%end%>
                             
                           </tbody>
                         </table>

@@ -75,14 +75,14 @@
             </div>
             <div class="col-md-2 col-sm-1">
             <% if current_user%>
-            <% if current_user.email=="admin@ptu.ac.kr"%>
-              <td>
-              
-                <a href="/post/delete?id=<%= @view_post.id %>" class="btn btn-default btn-sm btn-block">삭제</a>
-                <a href="/post/modify?id=<%= @view_post.id %>" class="btn btn-info btn-sm btn-block">수정</a>
-              
-              </td>
-            <%end%>
+              <% if current_user.email=="admin@ptu.ac.kr"%>
+                <td>
+                
+                  <a href="/post/delete?id=<%= @view_post.id %>" class="btn btn-default btn-sm btn-block">삭제</a>
+                  <a href="/post/modify?id=<%= @view_post.id %>" class="btn btn-info btn-sm btn-block">수정</a>
+                
+                </td>
+              <%end%>
             <%end%>
             </div>
           </div><!--<div class="panel-body">-->

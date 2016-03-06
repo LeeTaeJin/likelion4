@@ -8,45 +8,46 @@
         <div class="panel panel-default">
           <div class="panel-body">
             
-            <h2>N E W _ P R O J E C T</h2>
+            <h2>E D I T_ P R O J E C T</h2>
             <hr>
             
-            <%= form_tag("/project/write_process", method: "post") do %>
+            <%= form_tag("/project/modify_process", method: "post") do %>
               <div class="col-md-2 col-sm-1"></div>
               
               <div class="col-md-8 col-sm-10">
                 
                 <div class="input-group">
                   <span class="input-group-addon" id="basic-addon1">제목</span>
-                  <input type="text"  class="form-control"  placeholder="프로젝트 이름 :D" name="title"  required>
+                  <input type="text"  class="form-control"  value="<%=@modify_project.title%>" name="title"  required>
                 </div>
                 
                 <br>
                 
                 <div class="input-group">
                 <span class="input-group-addon" id="basic-addon1">팀장</span>
-                  <input type="text"  class="form-control"  placeholder="프로젝트 팀장 이름을 적어주세요 :D" name="team_leader"  required>
+                  <input type="text"  class="form-control"  value="<%=@modify_project.team_leader%>" name="team_leader"  required>
                   <span class="input-group-addon" id="basic-addon1">팀원</span>
-                  <input type="text"  class="form-control"  placeholder="프로젝트 팀원 이름을 적어주세요 :D" name="team_member"  required>
+                  <input type="text"  class="form-control"  value="<%=@modify_project.team_member%>" name="team_member"  required>
                 </div>
                 
                 <br>
                 
                 <div class="input-group">
                 <span class="input-group-addon" id="basic-addon1">주소</span>
-                  <input type="text"  class="form-control"  placeholder="프로젝트 주소를 적어주세요 :D (http://포함!!)" name="address"  required>
+                  <input type="text"  class="form-control"  value="<%=@modify_project.address%>" name="address"  required>
                 </div>
                 
                 <br>
                 
                 <div class="input-group">
                   <span class="input-group-addon" id="basic-addon1">설명</span>
-                  <textarea name="content" class="form-control" placeholder="해당 프로젝트에 대한 설명을 해주세요(기능, 사용한 주요 코드 등) :D" rows="20" cols="70"  required></textarea>
+                  <textarea name="content" class="form-control" placeholder="해당 프로젝트에 대한 설명을 해주세요(기능, 사용한 주요 코드 등) :D" rows="20" cols="70"  required><%=@modify_project.content%></textarea>
                 </div>
                 
                 <br>
                 
-                <input class="btn btn-info btn-lg btn-block" type ="submit" value = "작성완료"></input>
+                <input type='hidden' name='id' value='<%= @modify_project.id %>'>
+                <input class="btn btn-info btn-lg btn-block" type ="submit" value = "수정완료"></input>
                 <br><br>
               </div>
               
