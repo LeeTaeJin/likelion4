@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'admin/main'
+
   devise_for :users
   # root :to => "home#main"
   

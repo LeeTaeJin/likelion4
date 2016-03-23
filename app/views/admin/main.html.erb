@@ -1,0 +1,39 @@
+<div style="background-color:black; padding-top:150px;padding-bottom:300px" id="menu_font">
+  <div class="row">
+    <div class="col-md-2 col-xs-2"></div>
+    <div class="col-md-8 col xs-8">
+      <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading"><center>가입자 목록</center></div>
+        
+      
+        <!-- Table -->
+        <table class="table">
+          <thead>
+            <tr>
+              <th>id</th>
+              <th>이름</th>
+              <th>이메일</th>
+              <th>가입일</th>
+            </tr>
+          </thead>
+          
+          <tbody>
+            <% User.all.each do |user|%>
+              <tr>
+                <td><%= user.id %></td>
+                <td><%= user.name%></td>
+                <td><%= user.email %></a></td>
+                <td><%= user.created_at%></td>
+              </tr>
+            <%end%>
+          </tbody>
+          
+        </table>
+      </div>
+    </div>
+    <div class="col-md-2 col-xs-2"></div>
+    
+  </div>
+
+</div>

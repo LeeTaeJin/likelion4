@@ -64,7 +64,11 @@
           <%end%>
           
           <li><a href="/community/main?posting=all">COMMUNITY</a></li>
-          
+          <% if current_user %>
+            <% if current_user.email =="admin@ptu.ac.kr"%>
+              <li><a href="/admin/main">ADMIN</a></li>
+            <%end%>
+          <%end%>
         </ul>
   
         
