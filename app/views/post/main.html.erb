@@ -13,7 +13,7 @@
             <h2>N O T I C E</h2>
             <hr>
             <% if current_user %>
-            <div class="col-md-4 col-sm-12">
+            <div class="col-md-4 col-sm-4">
       
               
               <!--<form action="/post/search" method="POST">-->
@@ -36,9 +36,9 @@
             <%end%>
             
             <%if current_user%>
-            <div class="col-md-8 col-sm-12">
+              <div class="col-md-8 col-sm-8">
             <%else%>
-            <div class="col-md-12 col-sm-12">
+              <div class="col-md-12 col-sm-12">
             <%end%>
               <table class="table">
                 <thead>
@@ -61,7 +61,7 @@
                     <tr>
                       
                         <td><%= a.id %></td>
-                        <td><a href="/post/view?id=<%= a.id %>"><%= a.title %></a></td>
+                        <td><a href="/post/view?id=<%= a.id %>"><%= a.title %> (<%=a.replies.count%>)</a></td>
                         <td><%=User.find(a.user).name%></td><!--네임으로 수정해야함-->
                         <td><%= a.created_at.in_time_zone("Seoul")%></td>
                         <%if current_user%>
