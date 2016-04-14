@@ -80,14 +80,16 @@
                       <td><a href="/community/view?id=<%= a.id %>"><%= a.title %></a></td>
                       <td><%=User.find(a.user).name%></td>
                       <td><%= a.created_at.in_time_zone("Seoul")%></td>
-                      <% if current_user.id==a.user %>
                       <td>
+                      <% if current_user.id==a.user %>
+                      
                         <div class="btn-group">
                           <a href="/post/delete?id=<%= a.id %>" class="btn btn-default btn-sm">삭제</a>
                           <a href="/post/modify?id=<%= a.id %>" class="btn btn-default btn-sm">수정</a>
                         </div>
-                      </td>
+                      
                       <%end%><!--삭제 수정 이프-->
+                      </td>
                     </tr>
                     <% end %><!--post.where-->
                     

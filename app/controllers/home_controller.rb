@@ -1,6 +1,8 @@
 class HomeController < ApplicationController
   def main
-
+    if defined?params[:people]
+      @people=params[:people]
+    end
   end
   
   def search

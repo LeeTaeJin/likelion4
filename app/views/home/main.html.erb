@@ -1,11 +1,37 @@
+
 <div class="contain "id="menu_font" style="padding-top:100px;padding-bottom:50px">
-  
-  <div style="background-color:white; padding:50px">
-    <center>
-    <img src="https://scontent.xx.fbcdn.net/hphotos-xtl1/v/t1.0-9/12743755_949678688441198_8346172877976822994_n.png?oh=cb8fa34f31177dcc6adeeffab4eb76c2&oe=575CA352" style="height:300px"><br>
-    <h4>기술적 장벽때문에 본인의 생각을 세상 밖으로 표현하지 못하신 평택대 분들과 감동의 순간을 만들어가고 싶습니다.</h4><br>
-    <!--<a href="http://likelion.net"class="btn btn-info btn-lg">3.2 ~ 11 지원하기</a>-->
-    </center>
+  <div class="row">
+    
+    <div class="col-md-8 col-sm-6">
+      <div style=" padding:50px"><!--background-color:white;-->
+        <center>
+        <img src="https://scontent.xx.fbcdn.net/hphotos-xtl1/v/t1.0-9/12743755_949678688441198_8346172877976822994_n.png?oh=cb8fa34f31177dcc6adeeffab4eb76c2&oe=575CA352" style="height:300px"><br>
+        <h4>기술적 장벽때문에 본인의 생각을 세상 밖으로 표현하지 못하신 평택대 분들과 감동의 순간을 만들어가고 싶습니다.</h4><br>
+        <!--<a href="http://likelion.net"class="btn btn-info btn-lg">3.2 ~ 11 지원하기</a>-->
+        </center>
+      </div>
+    </div>
+    
+    <div class="col-md-3 col-sm-5">
+      <div class="well"> 
+         <form class="form"  role="search" action="/home/search" method="POST">
+          <h4>검색</h4>
+          <div class="input-group text-center">
+          <input class="form-control" name="searching_keyword" placeholder="검색어를 입력해주세요." type="text">
+            <span class="input-group-btn"><button class="btn btn-info" type="button">OK</button></span>
+          </div>
+        </form>
+      </div>
+      
+      <a href="http://class.likelion.net" class="btn btn-warning  btn-block" >CLASSLION 바로가기</a>
+      <br>
+      <a data-toggle="modal" data-target="#random_team_first" class="btn btn-info btn-block" >랜덤으로 조짜기</a>
+     
+    </div>
+   
+    <div class="col-md-1 col-sm-1">
+    </div>
+    
   </div>
 
 </div><!--<div style="background-color:lightgray">-->
@@ -83,4 +109,204 @@
     </div>
   </div>
 </div>
+
+
+
+
+
+<!--랜덤팀 나누기 모달-->
+<div class="modal fade" id="random_team_first" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"> 몇명이세요?</h4>
+      </div>
+      <div class="modal-body">
+        <br>
+        
+          <input type="text" class="form-control" id="people"> <!--명수-->
+          
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+        <button type="button" onclick="first()" data-toggle="modal" data-target="#random_team_second" data-dismiss="modal" class="btn btn-info">다음 -></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="random_team_second" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"> 이름을 입력해주세요</h4>
+      </div>
+      <div class="modal-body">
+        <br>
+        
+          <div id="people_name">
+          </div>
+          
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+        <button type="button" onclick = "second()"data-toggle="modal" data-target="#random_team_third" data-dismiss="modal" class="btn btn-info">다음 -></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="random_team_third" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"> 몇명으로 팀을 구성할까요?</h4>
+      </div>
+      <div class="modal-body">
+        
+        <div class="form-group">
+          <input type="text" class="form-control" id="team_num">
+        </div>
+          
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+        <button type="button" onclick="third()" data-toggle="modal" data-target="#random_team_fourth" data-dismiss="modal" class="btn btn-info">다음 -></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="random_team_fourth" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"> 팀 구성이 완료되었습니다!</h4>
+      </div>
+      <div class="modal-body">
+        <div id="team">
+        
+         </div> 
+         <a class="btn btn-default" onclick="third()">다시하기</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+var people;
+
+var team_num; //팀수
+
+function first() {
+    people = document.getElementById("people").value;
+    parseInt(people); //인트형으로 바꿈
+    var input_text="";
+    
+    for(var i=1 ; i<=people ; i++)
+    {
+      var id = "name" + i;
+      
+      input_text = input_text + "<input type='text' class='form-control' id=" + id + "> <br>";
+      // document.getElementById("people_name").innerHTML="<input type='text' class='form-control' id=" + id + ">";
+      // $("people_name").append = "<input type='text' class='form-control' id=" + id + ">";
+    }
+    
+    document.getElementById("people_name").innerHTML = input_text;
+}
+var names = new Array(); //사람수만큼 배열 정의
+
+function second() {
+    
+    for(var i=1 ; i<=people ; i++)
+    {
+      
+      var id = "name" + i;
+      
+      // if i == 1
+      //   su = "'" + document.getElementById(id).value + "'";
+      // else
+      //   su = su +",'" + document.getElementById(id).value + "'";
+          
+      // name = [su]
+      // su = su + "," + document.getElementById(id).value;
+      console.log(document.getElementById(id).value);
+      names.push(document.getElementById(id).value);
+      // name[i] = document.getElementById(id).value;
+      
+    }
+    
+}
+function third() {
+    team_num = document.getElementById("team_num").value; //팀구성원수
+    
+    var team = "";
+    
+    names.sort(function() {
+      return 0.5-Math.random()
+    }); //랜덤으로 섞음
+    
+    // for(var i=i; i<names.length; i++){
+    // 	tmp.push(names[i]);
+    // }
+    // names=tmp;
+    
+    
+     
+      var start = Number(0);
+      
+      for (var i=Number(1); undefined != names[parseInt(start)];i++){
+        var newArray = names.slice( parseInt(start), parseInt(start) + parseInt(team_num) ); //두번째껀 howmany팀구성원 수까지 새로운 배열에 넣음
+        start=parseInt(start)+parseInt(team_num); //다음 구성원 시작점을 출력한다.
+        console.log(i + "번째 팀 : " + newArray);
+        console.log("start = " + start +"/ names[start] = " + names[parseInt(start)] + "/ start+parseInt(team_num)=" + parseInt(start+team_num));
+        team = team + "<br>" + i + "번째 팀 :" + newArray ;
+        // 숫자들 사이에, 쉼표와 공백을 넣어서, 문자로 합치기. 
+  	    
+      }
+      
+      team = "<h3>" + team + "</h3><br>";
+      
+      document.getElementById("team").innerHTML = team;
+    
+    // for (var i=Number(0); !names[i];i++){
+    //     // for(var j=i; j<=(j+parseInt(team_num)-1);j++)
+    //       // console.log((i+1) + "번째 팀 : " + names[j] + " ");
+    //       console.log(typeof(i) + "/" + i);
+    // }
+      
+    //     var newArray = names.slice( parseInt(start), parseInt(start + team_num) ); //두번째껀 howmany팀구성원 수까지 새로운 배열에 넣음
+    //     parseInt(start=start+team_num); //다음 구성원 시작점을 출력한다.
+    //     console.log(i + "번째 팀 : " + newArray);
+    //     console.log("start = " + parseInt(start) +"/ names[start] = " + names[parseInt(start)]);
+    //     // 숫자들 사이에, 쉼표와 공백을 넣어서, 문자로 합치기. 
+  		// return newArray.join( ", " ); 	 // 텍스트로 저장됨. 
+    //   }
+    
+    
+    // var tmp;
+    // for(var i=0;i<people;i++){
+    //   tmp = names[i] + " " 
+    // }
+    
+    // Math.floor( (Math.random() * (2 - 1 + 1)) + n1 );
+    // for(var i=1 ; i<=people ; i++)
+    // {
+    //   teamddd =teamddd + names[i]+",";
+    // }
+    // document.getElementById("team").innerText = tmp;
+}
+
+
+</script>
 
