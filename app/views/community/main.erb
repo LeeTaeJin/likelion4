@@ -57,19 +57,20 @@
                       <tr>
                         <td><%= a.id %></td>
                         <td><%= a.category%></td>
-                        <td><a href="/community/view?id=<%= a.id %>"><%= a.title %></a></td>
+                        <td><a href="/community/view?id=<%= a.id %>"><%= a.title %> (<%=a.replies.count%>)</a></td>
                         <td><%=User.find(a.user).name%></td>
-                        <td><%= a.created_at.in_time_zone("Seoul")%></td>
-                        <% if current_user.id==a.user %>
+                        <td><%= a.created_at.in_time_zone('Seoul')%></td>
                         <td>
+                        <% if current_user.id==a.user %>
+                        
                           <div class="btn-group">
-                            <a href="/post/delete?id=<%= a.id %>" class="btn btn-default btn-sm">삭제</a>
-                            <a href="/post/modify?id=<%= a.id %>" class="btn btn-default btn-sm">수정</a>
+                            <a href="/post/delete?id=<%= a.id %>" class="btn btn-default btn-xs">삭제</a>
+                            <a href="/post/modify?id=<%= a.id %>" class="btn btn-default btn-xs">수정</a>
                           </div>
-                        </td>
+                        
                         <%end%><!--삭제 수정 이프-->
+                        </td>
                       </tr>
-                  
                     <% end %><!--post.where-->
                   
                   <% else%>
@@ -77,9 +78,9 @@
                     <tr>
                       <td><%= a.id %></td>
                       <td><%= a.category%></td>
-                      <td><a href="/community/view?id=<%= a.id %>"><%= a.title %></a></td>
+                      <td><a href="/community/view?id=<%= a.id %>"><%= a.title %> (<%=a.replies.count%>)</a></td>
                       <td><%=User.find(a.user).name%></td>
-                      <td><%= a.created_at.in_time_zone("Seoul")%></td>
+                      <td><%= a.created_at%></td>
                       <td>
                       <% if current_user.id==a.user %>
                       

@@ -1,36 +1,44 @@
 <div style="background-color:black; padding-top:150px;padding-bottom:300px" id="menu_font">
   <div class="row">
     <div class="col-md-2 col-xs-2"></div>
+    
     <div class="col-md-8 col xs-8">
       <div class="panel panel-default">
-        <!-- Default panel contents -->
-        <div class="panel-heading"><center>가입자 목록</center></div>
-        
-      
-        <!-- Table -->
-        <table class="table">
-          <thead>
-            <tr>
-              <th>id</th>
-              <th>이름</th>
-              <th>이메일</th>
-              <th>가입일</th>
-            </tr>
-          </thead>
-          
-          <tbody>
-            <% User.all.each do |user|%>
-              <tr>
-                <td><%= user.id %></td>
-                <td><%= user.name%></td>
-                <td><%= user.email %></a></td>
-                <td><%= user.created_at%></td>
-              </tr>
-            <%end%>
-          </tbody>
-          
-        </table>
+        <div class="panel-body">
+            <center><h2>LikeLion A D M I N</h2></center>
+            <hr>
+          <div class="row">
+            <div class="col-md-5">
+              <a href="/admin/signup_person" class="btn btn-info btn-lg btn-block" >가입자 관리</a>
+              <br>
+              <a href="/admin/signup_person" class="btn btn-warning btn-lg btn-block" >4기 출석체크</a>
+              <br>
+              
+              <a href="/admin/signup_person" class="btn btn-info btn-lg btn-block" >간단 공지사항 작성</a>
+              <a href="/admin/signup_person" class="btn btn-info btn-lg btn-block" >공지사항 팝업창 관리</a>
+              
+              <a href="/admin/signup_person" class="btn btn-info btn-lg btn-block" >팀플 관리</a>
+            </div>
+            <div class="col-md-5">
+            </div>
+          </div>
+        </div>
       </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
     </div>
     <div class="col-md-2 col-xs-2"></div>
     
