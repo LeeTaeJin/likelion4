@@ -1955,3 +1955,2005 @@ Processing by PostController#main as HTML
   Rendered post/main.html.erb within layouts/application (8.9ms)
   [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "projects"
 Completed 200 OK in 128ms (Views: 125.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 61.79.144.160 at 2016-05-10 11:49:48 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.4) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.4) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (109.1ms)
+
+
+Started GET "/" for 61.79.144.160 at 2016-05-10 11:50:25 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.4) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.4) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (99.1ms)
+  [1m[36m (14.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (19.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to DeviseCreateUsers (20151217172339)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar DEFAULT '' NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_users_on_name" ON "users" ("name")[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_name' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_name' AND type='index'
+
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_name' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_name' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  CREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151217172339"]]
+  [1m[35m (21.2ms)[0m  commit transaction
+Migrating to CreatePosts (20151217174419)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user" integer, "category" varchar, "title" varchar, "content" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151217174419"]]
+  [1m[35m (13.8ms)[0m  commit transaction
+Migrating to CreateReplies (20151231051706)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.9ms)[0m  CREATE TABLE "replies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "post_id" integer, "user" integer, "content" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151231051706"]]
+  [1m[35m (14.8ms)[0m  commit transaction
+Migrating to CreateHomeworks (20160102074735)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "homeworks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "post_id" integer, "user" integer, "content" varchar, "href" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160102074735"]]
+  [1m[35m (13.2ms)[0m  commit transaction
+Migrating to CreateProjects (20160113113002)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.6ms)[0m  CREATE TABLE "projects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "writer" integer, "team_leader" varchar, "team_member" varchar, "content" varchar, "address" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160113113002"]]
+  [1m[35m (12.5ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (1.3ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_name' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_name' AND type='index'
+
+
+
+Started GET "/" for 61.79.144.160 at 2016-05-10 11:51:29 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#main as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE (category = '공지사항')  ORDER BY "posts"."id" DESC LIMIT 5
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE (category = '아이디어')  ORDER BY "posts"."id" DESC LIMIT 5[0m
+  [1m[35mProject Load (0.3ms)[0m  SELECT  "projects".* FROM "projects"  ORDER BY "projects"."id" DESC LIMIT 5
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "projects"[0m
+  Rendered home/main.html.erb within layouts/application (38.5ms)
+  [1m[35mCACHE (7.5ms)[0m  SELECT COUNT(*) FROM "projects"
+Completed 200 OK in 1369ms (Views: 1335.2ms | ActiveRecord: 9.7ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 11:51:31 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/community.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 11:51:32 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 61.79.144.160 at 2016-05-10 11:51:32 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-5b7962634beb6e17a28099faf6dd543af1ff77237108bf716098be68c169876f.css?body=1" for 61.79.144.160 at 2016-05-10 11:51:32 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homework.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 11:51:32 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/post.self-39c17a3b60ab027ee556448e6cee93b7ef927f138b62560ce25b0e3f619ed075.css?body=1" for 61.79.144.160 at 2016-05-10 11:51:32 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/project.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 11:51:32 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 61.79.144.160 at 2016-05-10 11:51:32 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-46e90b9289857cfb4bd203fd6ba3f52880b7e7f4277abe3cc82de6057f38b2cc.css?body=1" for 61.79.144.160 at 2016-05-10 11:51:32 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 11:51:32 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/community.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 11:51:32 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 11:51:32 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/project.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 11:51:32 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/post.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 11:51:32 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 61.79.144.160 at 2016-05-10 11:51:33 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 61.79.144.160 at 2016-05-10 11:51:33 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homework.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 11:51:33 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 61.79.144.160 at 2016-05-10 11:53:18 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#main as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE (category = '공지사항')  ORDER BY "posts"."id" DESC LIMIT 5[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE (category = '아이디어')  ORDER BY "posts"."id" DESC LIMIT 5
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT  "projects".* FROM "projects"  ORDER BY "projects"."id" DESC LIMIT 5[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "projects"
+  Rendered home/main.html.erb within layouts/application (165.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "projects"[0m
+Completed 200 OK in 347ms (Views: 344.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 11:53:19 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/community.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 11:53:19 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homework.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 11:53:19 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-5b7962634beb6e17a28099faf6dd543af1ff77237108bf716098be68c169876f.css?body=1" for 61.79.144.160 at 2016-05-10 11:53:19 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/post.self-39c17a3b60ab027ee556448e6cee93b7ef927f138b62560ce25b0e3f619ed075.css?body=1" for 61.79.144.160 at 2016-05-10 11:53:19 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/project.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 11:53:19 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 61.79.144.160 at 2016-05-10 11:53:20 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 61.79.144.160 at 2016-05-10 11:53:20 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 61.79.144.160 at 2016-05-10 11:53:20 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 11:53:20 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/community.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 11:53:20 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 11:53:20 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homework.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 11:53:20 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/post.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 11:53:20 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/project.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 11:53:20 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 61.79.144.160 at 2016-05-10 11:53:20 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-46e90b9289857cfb4bd203fd6ba3f52880b7e7f4277abe3cc82de6057f38b2cc.css?body=1" for 61.79.144.160 at 2016-05-10 11:53:20 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/users/sign_in" for 61.79.144.160 at 2016-05-10 11:53:26 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (90.1ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "projects"
+Completed 200 OK in 318ms (Views: 285.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/sign_up" for 61.79.144.160 at 2016-05-10 11:53:29 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.4ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "projects"[0m
+Completed 200 OK in 255ms (Views: 252.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for 61.79.144.160 at 2016-05-10 11:53:48 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dA/zFBFzlm2EHp3K1Ttd6sfL8vIEiiaRFp2IMdNR1K9rWKQE3q39V6wi05yLyXQSSjHT2m2E+XINohLBk+eoow==", "user"=>{"email"=>"admin@ptu.ac.kr", "name"=>"dkdkdk", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"회원가입"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'admin@ptu.ac.kr' LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["email", "admin@ptu.ac.kr"], ["encrypted_password", "$2a$10$BrVd4XwdUNagkg3oW5qduOZhKP.dglE/MP2tgHcuXCwXCwfluPnQC"], ["name", "dkdkdk"], ["created_at", "2016-05-10 11:53:48.852626"], ["updated_at", "2016-05-10 11:53:48.852626"]]
+  [1m[36m (13.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2016-05-10 11:53:48.887245"], ["current_sign_in_at", "2016-05-10 11:53:48.887245"], ["last_sign_in_ip", "61.79.144.160"], ["current_sign_in_ip", "61.79.144.160"], ["sign_in_count", 1], ["updated_at", "2016-05-10 11:53:48.889273"], ["id", 1]]
+  [1m[35m (16.7ms)[0m  commit transaction
+Redirected to http://project-05-09-park-ji-yeon.c9users.io/
+Completed 302 Found in 264ms (ActiveRecord: 31.8ms)
+
+
+Started GET "/" for 61.79.144.160 at 2016-05-10 11:53:49 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#main as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE (category = '공지사항')  ORDER BY "posts"."id" DESC LIMIT 5[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE (category = '아이디어')  ORDER BY "posts"."id" DESC LIMIT 5
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT  "projects".* FROM "projects"  ORDER BY "projects"."id" DESC LIMIT 5[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "projects"
+  Rendered home/main.html.erb within layouts/application (3.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 122ms (Views: 120.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/main" for 61.79.144.160 at 2016-05-10 11:53:54 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#main as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered admin/main.html.erb within layouts/application (2.8ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "projects"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 134ms (Views: 132.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/main" for 61.79.144.160 at 2016-05-10 11:55:29 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#main as HTML
+  Rendered admin/main.html.erb within layouts/application (0.5ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "projects"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 144ms (Views: 139.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 11:55:29 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-5b7962634beb6e17a28099faf6dd543af1ff77237108bf716098be68c169876f.css?body=1" for 61.79.144.160 at 2016-05-10 11:55:29 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/post.self-39c17a3b60ab027ee556448e6cee93b7ef927f138b62560ce25b0e3f619ed075.css?body=1" for 61.79.144.160 at 2016-05-10 11:55:29 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-46e90b9289857cfb4bd203fd6ba3f52880b7e7f4277abe3cc82de6057f38b2cc.css?body=1" for 61.79.144.160 at 2016-05-10 11:55:29 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 61.79.144.160 at 2016-05-10 11:55:29 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 61.79.144.160 at 2016-05-10 11:55:30 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 11:55:30 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/community.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 11:55:30 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 11:55:30 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/community.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 11:55:30 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homework.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 11:55:30 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/project.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 11:55:30 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/project.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 11:55:30 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 61.79.144.160 at 2016-05-10 11:55:31 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homework.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 11:55:31 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/post.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 11:55:31 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 61.79.144.160 at 2016-05-10 11:55:32 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/admin/signup_person" for 61.79.144.160 at 2016-05-10 11:55:36 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#signup_person as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered admin/signup_person.erb within layouts/application (3.1ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "projects"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 140ms (Views: 138.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/post/main" for 61.79.144.160 at 2016-05-10 11:55:45 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#main as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (category = '공지사항')[0m
+  Rendered post/main.html.erb within layouts/application (9.8ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "projects"
+Completed 200 OK in 132ms (Views: 129.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/post/write" for 61.79.144.160 at 2016-05-10 11:55:46 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#write as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered post/write.erb within layouts/application (1.3ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "projects"
+Completed 200 OK in 127ms (Views: 124.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/post/write_process" for 61.79.144.160 at 2016-05-10 11:55:57 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#write_process as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/SqdOtLPdy4Pc9W+spsxCGjQP7GEX0EpfYKS5K0Q9h7ifcoqHREcFCdPm+jsaRjw5Soeme1RnspmvQgU7aaKEg==", "category"=>"공지사항", "user"=>"1", "title"=>"dfdf", "content"=>"dfdfdf"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "posts" ("title", "user", "category", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["title", "dfdf"], ["user", 1], ["category", "공지사항"], ["content", "dfdfdf"], ["created_at", "2016-05-10 11:55:57.389648"], ["updated_at", "2016-05-10 11:55:57.389648"]]
+  [1m[36m (196.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://project-05-09-park-ji-yeon.c9users.io/post/main
+Completed 302 Found in 208ms (ActiveRecord: 197.3ms)
+
+
+Started GET "/post/main" for 61.79.144.160 at 2016-05-10 11:55:57 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#main as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (category = '공지사항')[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "replies" WHERE "replies"."post_id" = ?  [["post_id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered post/main.html.erb within layouts/application (47.6ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "projects"
+Completed 200 OK in 164ms (Views: 162.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/post/view?id=1" for 61.79.144.160 at 2016-05-10 11:56:00 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostController#view as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mReply Load (0.2ms)[0m  [1mSELECT "replies".* FROM "replies" WHERE "replies"."post_id" = ?[0m  [["post_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered post/view.erb within layouts/application (4.6ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "projects"[0m
+Completed 200 OK in 218ms (Views: 215.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/admin/main" for 61.79.144.160 at 2016-05-10 11:56:02 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#main as HTML
+  Rendered admin/main.html.erb within layouts/application (0.6ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "projects"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 121ms (Views: 119.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/signup_person" for 61.79.144.160 at 2016-05-10 11:56:52 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#signup_person as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered admin/signup_person.erb within layouts/application (58.8ms)
+Completed 500 Internal Server Error in 66ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined local variable or method `a' for #<#<Class:0x007f904df46930>:0x007f904c3b8d80>):
+    26:                 <td><%= user.id %></td>
+    27:                 <td><%= user.name%></td>
+    28:                 <td><%= user.email %></a></td>
+    29:                 <td><%= (a.created_at + 9.hours).to_s(:db)%></td>
+    30:                 <td>
+    31:                   <div class="btn-group" role="group" aria-label="...">
+    32:                     <a href='#edit_<%=user.id%>' data-toggle="modal" type="button" class="btn btn-sm btn-info">이름 수정</a>
+  app/views/admin/signup_person.erb:29:in `block in _app_views_admin_signup_person_erb___3977547964381647039_70128865483160'
+  app/views/admin/signup_person.erb:24:in `_app_views_admin_signup_person_erb___3977547964381647039_70128865483160'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (109.8ms)
+
+
+Started GET "/admin/signup_person" for 61.79.144.160 at 2016-05-10 11:56:54 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#signup_person as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered admin/signup_person.erb within layouts/application (46.0ms)
+Completed 500 Internal Server Error in 136ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined local variable or method `a' for #<#<Class:0x007f904df46930>:0x007f904d2ab608>):
+    26:                 <td><%= user.id %></td>
+    27:                 <td><%= user.name%></td>
+    28:                 <td><%= user.email %></a></td>
+    29:                 <td><%= (a.created_at + 9.hours).to_s(:db)%></td>
+    30:                 <td>
+    31:                   <div class="btn-group" role="group" aria-label="...">
+    32:                     <a href='#edit_<%=user.id%>' data-toggle="modal" type="button" class="btn btn-sm btn-info">이름 수정</a>
+  app/views/admin/signup_person.erb:29:in `block in _app_views_admin_signup_person_erb___3977547964381647039_70128873300400'
+  app/views/admin/signup_person.erb:24:in `_app_views_admin_signup_person_erb___3977547964381647039_70128873300400'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (21.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (106.8ms)
+
+
+Started GET "/admin/signup_person" for 61.79.144.160 at 2016-05-10 11:57:05 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#signup_person as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered admin/signup_person.erb within layouts/application (3.3ms)
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "projects"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 193ms (Views: 191.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/community.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 11:57:06 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-46e90b9289857cfb4bd203fd6ba3f52880b7e7f4277abe3cc82de6057f38b2cc.css?body=1" for 61.79.144.160 at 2016-05-10 11:57:06 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 61.79.144.160 at 2016-05-10 11:57:06 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 61.79.144.160 at 2016-05-10 11:57:06 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 61.79.144.160 at 2016-05-10 11:57:06 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 11:57:06 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/community.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 11:57:07 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 11:57:07 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homework.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 11:57:07 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/post.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 11:57:07 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 11:57:07 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-5b7962634beb6e17a28099faf6dd543af1ff77237108bf716098be68c169876f.css?body=1" for 61.79.144.160 at 2016-05-10 11:57:07 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/post.self-39c17a3b60ab027ee556448e6cee93b7ef927f138b62560ce25b0e3f619ed075.css?body=1" for 61.79.144.160 at 2016-05-10 11:57:07 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homework.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 11:57:07 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/project.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 11:57:07 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 61.79.144.160 at 2016-05-10 11:57:07 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/project.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 11:57:08 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/admin/signup_person" for 61.79.144.160 at 2016-05-10 11:57:22 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#signup_person as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered admin/signup_person.erb within layouts/application (4.2ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "projects"
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 162ms (Views: 159.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/admin/signup_person" for 61.79.144.160 at 2016-05-10 11:58:34 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#signup_person as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered admin/signup_person.erb within layouts/application (9.8ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "projects"
+  [1m[36mUser Load (2.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 262ms (Views: 258.2ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/admin/signup_person" for 61.79.144.160 at 2016-05-10 11:59:08 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#signup_person as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered admin/signup_person.erb within layouts/application (1.7ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "projects"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 238ms (Views: 236.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/signup_person" for 61.79.144.160 at 2016-05-10 11:59:13 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#signup_person as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered admin/signup_person.erb within layouts/application (2.1ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "projects"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 163ms (Views: 161.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/signup_person" for 61.79.144.160 at 2016-05-10 12:00:24 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#signup_person as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users"
+  Rendered admin/signup_person.erb within layouts/application (149.1ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 294ms (Views: 292.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/admin/main" for 61.79.144.160 at 2016-05-10 12:01:23 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#main as HTML
+  Rendered admin/main.html.erb within layouts/application (0.1ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 160ms (Views: 159.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/community.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:01:23 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-5b7962634beb6e17a28099faf6dd543af1ff77237108bf716098be68c169876f.css?body=1" for 61.79.144.160 at 2016-05-10 12:01:23 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/post.self-39c17a3b60ab027ee556448e6cee93b7ef927f138b62560ce25b0e3f619ed075.css?body=1" for 61.79.144.160 at 2016-05-10 12:01:23 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 61.79.144.160 at 2016-05-10 12:01:23 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 61.79.144.160 at 2016-05-10 12:01:23 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 61.79.144.160 at 2016-05-10 12:01:23 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:01:23 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/community.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:01:23 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:01:24 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homework.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:01:24 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:01:24 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homework.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:01:24 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-46e90b9289857cfb4bd203fd6ba3f52880b7e7f4277abe3cc82de6057f38b2cc.css?body=1" for 61.79.144.160 at 2016-05-10 12:01:24 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/project.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:01:24 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/post.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:01:25 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/project.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:01:25 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 61.79.144.160 at 2016-05-10 12:01:25 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/admin/signup_person" for 61.79.144.160 at 2016-05-10 12:01:32 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#signup_person as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered admin/signup_person.erb within layouts/application (4.4ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "projects"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 147ms (Views: 145.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/signup_person" for 61.79.144.160 at 2016-05-10 12:01:41 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#signup_person as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users"
+  Rendered admin/signup_person.erb within layouts/application (157.2ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 301ms (Views: 298.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/admin/signup_person" for 61.79.144.160 at 2016-05-10 12:01:47 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#signup_person as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered admin/signup_person.erb within layouts/application (76.8ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "projects"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 196ms (Views: 194.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 61.79.144.160 at 2016-05-10 12:02:51 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#main as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE (category = '공지사항')  ORDER BY "posts"."id" DESC LIMIT 5
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE (category = '아이디어')  ORDER BY "posts"."id" DESC LIMIT 5[0m
+  [1m[35mProject Load (0.2ms)[0m  SELECT  "projects".* FROM "projects"  ORDER BY "projects"."id" DESC LIMIT 5
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "projects"[0m
+  Rendered home/main.html.erb within layouts/application (6.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "projects"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 226ms (Views: 223.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/admin/signup_person" for 61.79.144.160 at 2016-05-10 12:05:10 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#signup_person as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered admin/signup_person.erb within layouts/application (114.6ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 238ms (Views: 236.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/main" for 61.79.144.160 at 2016-05-10 12:05:14 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#main as HTML
+  Rendered admin/main.html.erb within layouts/application (0.6ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 120ms (Views: 118.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:05:14 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/community.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:05:15 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-5b7962634beb6e17a28099faf6dd543af1ff77237108bf716098be68c169876f.css?body=1" for 61.79.144.160 at 2016-05-10 12:05:15 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homework.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:05:15 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/project.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:05:15 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-46e90b9289857cfb4bd203fd6ba3f52880b7e7f4277abe3cc82de6057f38b2cc.css?body=1" for 61.79.144.160 at 2016-05-10 12:05:15 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 61.79.144.160 at 2016-05-10 12:05:15 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 61.79.144.160 at 2016-05-10 12:05:15 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 61.79.144.160 at 2016-05-10 12:05:15 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:05:15 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:05:15 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/community.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:05:15 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homework.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:05:15 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/post.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:05:15 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/project.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:05:15 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 61.79.144.160 at 2016-05-10 12:05:15 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/post.self-39c17a3b60ab027ee556448e6cee93b7ef927f138b62560ce25b0e3f619ed075.css?body=1" for 61.79.144.160 at 2016-05-10 12:05:16 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/admin/attendance" for 61.79.144.160 at 2016-05-10 12:05:19 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#attendance as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered admin/attendance.erb within layouts/application (2.7ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "projects"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 248ms (Views: 246.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/main" for 61.79.144.160 at 2016-05-10 12:05:21 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#main as HTML
+  Rendered admin/main.html.erb within layouts/application (0.1ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "projects"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 265ms (Views: 264.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/community.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:05:22 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-5b7962634beb6e17a28099faf6dd543af1ff77237108bf716098be68c169876f.css?body=1" for 61.79.144.160 at 2016-05-10 12:05:22 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/project.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:05:22 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-46e90b9289857cfb4bd203fd6ba3f52880b7e7f4277abe3cc82de6057f38b2cc.css?body=1" for 61.79.144.160 at 2016-05-10 12:05:22 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 61.79.144.160 at 2016-05-10 12:05:22 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 61.79.144.160 at 2016-05-10 12:05:22 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:05:22 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/community.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:05:22 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:05:22 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homework.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:05:22 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/project.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:05:22 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 61.79.144.160 at 2016-05-10 12:05:22 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:05:23 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/post.self-39c17a3b60ab027ee556448e6cee93b7ef927f138b62560ce25b0e3f619ed075.css?body=1" for 61.79.144.160 at 2016-05-10 12:05:23 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homework.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:05:23 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 61.79.144.160 at 2016-05-10 12:05:23 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/post.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:05:23 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/admin/attendance" for 61.79.144.160 at 2016-05-10 12:05:26 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#attendance as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+  Rendered admin/attendance.erb within layouts/application (1.7ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 207ms (Views: 205.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/signup_person" for 61.79.144.160 at 2016-05-10 12:08:05 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#signup_person as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered admin/signup_person.erb within layouts/application (1.7ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "projects"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 232ms (Views: 230.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/signup_person" for 61.79.144.160 at 2016-05-10 12:08:36 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#signup_person as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered admin/signup_person.erb within layouts/application (2.7ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "projects"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 301ms (Views: 298.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/homework.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:08:36 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/post.self-39c17a3b60ab027ee556448e6cee93b7ef927f138b62560ce25b0e3f619ed075.css?body=1" for 61.79.144.160 at 2016-05-10 12:08:36 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-46e90b9289857cfb4bd203fd6ba3f52880b7e7f4277abe3cc82de6057f38b2cc.css?body=1" for 61.79.144.160 at 2016-05-10 12:08:36 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 61.79.144.160 at 2016-05-10 12:08:36 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 61.79.144.160 at 2016-05-10 12:08:36 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 61.79.144.160 at 2016-05-10 12:08:36 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:08:37 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/community.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:08:37 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:08:37 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homework.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:08:37 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/post.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:08:37 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:08:37 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/community.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:08:37 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-5b7962634beb6e17a28099faf6dd543af1ff77237108bf716098be68c169876f.css?body=1" for 61.79.144.160 at 2016-05-10 12:08:37 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/project.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:08:37 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/project.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:08:38 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 61.79.144.160 at 2016-05-10 12:08:38 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/admin/main" for 61.79.144.160 at 2016-05-10 12:08:48 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#main as HTML
+  Rendered admin/main.html.erb within layouts/application (0.7ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "projects"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 150ms (Views: 147.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/attendance" for 61.79.144.160 at 2016-05-10 12:08:49 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#attendance as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+  Rendered admin/attendance.erb within layouts/application (5.2ms)
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 239ms (Views: 237.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/attendance" for 61.79.144.160 at 2016-05-10 12:13:26 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#attendance as HTML
+  Rendered admin/attendance.erb within layouts/application (0.8ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 163ms (Views: 161.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/community.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:13:26 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-46e90b9289857cfb4bd203fd6ba3f52880b7e7f4277abe3cc82de6057f38b2cc.css?body=1" for 61.79.144.160 at 2016-05-10 12:13:26 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-5b7962634beb6e17a28099faf6dd543af1ff77237108bf716098be68c169876f.css?body=1" for 61.79.144.160 at 2016-05-10 12:13:26 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 61.79.144.160 at 2016-05-10 12:13:26 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 61.79.144.160 at 2016-05-10 12:13:26 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 61.79.144.160 at 2016-05-10 12:13:26 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:13:26 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:13:27 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homework.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:13:27 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/post.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:13:27 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:13:27 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 61.79.144.160 at 2016-05-10 12:13:27 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/post.self-39c17a3b60ab027ee556448e6cee93b7ef927f138b62560ce25b0e3f619ed075.css?body=1" for 61.79.144.160 at 2016-05-10 12:13:27 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/project.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:13:27 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homework.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:13:27 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/community.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:13:28 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/project.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:13:28 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/admin/attendance" for 61.79.144.160 at 2016-05-10 12:15:24 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#attendance as HTML
+  Rendered admin/attendance.erb within layouts/application (0.7ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 235ms (Views: 233.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/community.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:15:25 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/post.self-39c17a3b60ab027ee556448e6cee93b7ef927f138b62560ce25b0e3f619ed075.css?body=1" for 61.79.144.160 at 2016-05-10 12:15:25 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-46e90b9289857cfb4bd203fd6ba3f52880b7e7f4277abe3cc82de6057f38b2cc.css?body=1" for 61.79.144.160 at 2016-05-10 12:15:25 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-5b7962634beb6e17a28099faf6dd543af1ff77237108bf716098be68c169876f.css?body=1" for 61.79.144.160 at 2016-05-10 12:15:26 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:15:26 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homework.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:15:26 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/project.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:15:26 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 61.79.144.160 at 2016-05-10 12:15:26 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:15:26 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/community.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:15:26 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:15:26 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homework.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:15:26 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 61.79.144.160 at 2016-05-10 12:15:26 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 61.79.144.160 at 2016-05-10 12:15:26 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/post.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:15:26 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/project.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:15:26 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 61.79.144.160 at 2016-05-10 12:15:26 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/admin/attendance" for 61.79.144.160 at 2016-05-10 12:15:39 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#attendance as HTML
+  Rendered admin/attendance.erb within layouts/application (0.6ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 130ms (Views: 129.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:15:40 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-5b7962634beb6e17a28099faf6dd543af1ff77237108bf716098be68c169876f.css?body=1" for 61.79.144.160 at 2016-05-10 12:15:40 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/community.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:15:40 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homework.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:15:40 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/project.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:15:40 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/post.self-39c17a3b60ab027ee556448e6cee93b7ef927f138b62560ce25b0e3f619ed075.css?body=1" for 61.79.144.160 at 2016-05-10 12:15:40 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-46e90b9289857cfb4bd203fd6ba3f52880b7e7f4277abe3cc82de6057f38b2cc.css?body=1" for 61.79.144.160 at 2016-05-10 12:15:40 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 61.79.144.160 at 2016-05-10 12:15:40 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 61.79.144.160 at 2016-05-10 12:15:40 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 61.79.144.160 at 2016-05-10 12:15:40 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:15:40 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/community.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:15:40 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:15:40 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homework.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:15:40 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/post.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:15:40 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 61.79.144.160 at 2016-05-10 12:15:40 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/project.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:15:40 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/admin/attendance" for 61.79.144.160 at 2016-05-10 12:16:14 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#attendance as HTML
+  Rendered admin/attendance.erb within layouts/application (0.8ms)
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 244ms (Views: 242.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:16:14 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/community.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:16:14 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-5b7962634beb6e17a28099faf6dd543af1ff77237108bf716098be68c169876f.css?body=1" for 61.79.144.160 at 2016-05-10 12:16:14 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homework.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:16:14 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/post.self-39c17a3b60ab027ee556448e6cee93b7ef927f138b62560ce25b0e3f619ed075.css?body=1" for 61.79.144.160 at 2016-05-10 12:16:14 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/project.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:16:14 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-46e90b9289857cfb4bd203fd6ba3f52880b7e7f4277abe3cc82de6057f38b2cc.css?body=1" for 61.79.144.160 at 2016-05-10 12:16:14 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 61.79.144.160 at 2016-05-10 12:16:14 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 61.79.144.160 at 2016-05-10 12:16:14 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 61.79.144.160 at 2016-05-10 12:16:14 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:16:14 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/community.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:16:14 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homework.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:16:14 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:16:14 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/post.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:16:14 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/project.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:16:14 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 61.79.144.160 at 2016-05-10 12:16:14 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/admin/attendance" for 61.79.144.160 at 2016-05-10 12:17:00 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#attendance as HTML
+  Rendered admin/attendance.erb within layouts/application (0.1ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 198ms (Views: 195.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/community.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:17:01 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-5b7962634beb6e17a28099faf6dd543af1ff77237108bf716098be68c169876f.css?body=1" for 61.79.144.160 at 2016-05-10 12:17:01 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 61.79.144.160 at 2016-05-10 12:17:01 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 61.79.144.160 at 2016-05-10 12:17:01 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 61.79.144.160 at 2016-05-10 12:17:01 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:17:01 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/community.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:17:02 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homework.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:17:02 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/post.self-39c17a3b60ab027ee556448e6cee93b7ef927f138b62560ce25b0e3f619ed075.css?body=1" for 61.79.144.160 at 2016-05-10 12:17:02 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/project.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:17:02 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-46e90b9289857cfb4bd203fd6ba3f52880b7e7f4277abe3cc82de6057f38b2cc.css?body=1" for 61.79.144.160 at 2016-05-10 12:17:02 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:17:02 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homework.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:17:02 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/post.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:17:02 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/project.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:17:02 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 61.79.144.160 at 2016-05-10 12:17:02 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:17:02 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/admin/attendance" for 61.79.144.160 at 2016-05-10 12:17:35 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#attendance as HTML
+  Rendered admin/attendance.erb within layouts/application (0.6ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 131ms (Views: 129.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:17:35 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/community.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:17:35 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-5b7962634beb6e17a28099faf6dd543af1ff77237108bf716098be68c169876f.css?body=1" for 61.79.144.160 at 2016-05-10 12:17:35 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/post.self-39c17a3b60ab027ee556448e6cee93b7ef927f138b62560ce25b0e3f619ed075.css?body=1" for 61.79.144.160 at 2016-05-10 12:17:35 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/project.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:17:35 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-46e90b9289857cfb4bd203fd6ba3f52880b7e7f4277abe3cc82de6057f38b2cc.css?body=1" for 61.79.144.160 at 2016-05-10 12:17:35 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 61.79.144.160 at 2016-05-10 12:17:35 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 61.79.144.160 at 2016-05-10 12:17:35 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 61.79.144.160 at 2016-05-10 12:17:35 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:17:35 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:17:35 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homework.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:17:35 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/post.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:17:35 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/project.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:17:35 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 61.79.144.160 at 2016-05-10 12:17:35 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homework.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:17:36 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/community.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:17:36 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/admin/attendance" for 61.79.144.160 at 2016-05-10 12:17:59 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#attendance as HTML
+  Rendered admin/attendance.erb within layouts/application (0.8ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 301ms (Views: 299.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/community.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:18:00 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-5b7962634beb6e17a28099faf6dd543af1ff77237108bf716098be68c169876f.css?body=1" for 61.79.144.160 at 2016-05-10 12:18:00 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homework.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:18:00 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-46e90b9289857cfb4bd203fd6ba3f52880b7e7f4277abe3cc82de6057f38b2cc.css?body=1" for 61.79.144.160 at 2016-05-10 12:18:00 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/post.self-39c17a3b60ab027ee556448e6cee93b7ef927f138b62560ce25b0e3f619ed075.css?body=1" for 61.79.144.160 at 2016-05-10 12:18:00 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 61.79.144.160 at 2016-05-10 12:18:00 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 61.79.144.160 at 2016-05-10 12:18:00 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 61.79.144.160 at 2016-05-10 12:18:00 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:18:00 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/community.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:18:00 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:18:00 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homework.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:18:00 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/post.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:18:00 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/project.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:18:00 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 61.79.144.160 at 2016-05-10 12:18:01 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:18:01 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/project.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:18:01 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/admin/attendance" for 61.79.144.160 at 2016-05-10 12:18:39 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#attendance as HTML
+  Rendered admin/attendance.erb within layouts/application (0.5ms)
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 242ms (Views: 240.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:18:39 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/community.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:18:39 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/post.self-39c17a3b60ab027ee556448e6cee93b7ef927f138b62560ce25b0e3f619ed075.css?body=1" for 61.79.144.160 at 2016-05-10 12:18:39 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/project.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:18:39 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-46e90b9289857cfb4bd203fd6ba3f52880b7e7f4277abe3cc82de6057f38b2cc.css?body=1" for 61.79.144.160 at 2016-05-10 12:18:39 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 61.79.144.160 at 2016-05-10 12:18:39 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-5b7962634beb6e17a28099faf6dd543af1ff77237108bf716098be68c169876f.css?body=1" for 61.79.144.160 at 2016-05-10 12:18:40 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homework.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:18:40 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 61.79.144.160 at 2016-05-10 12:18:40 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homework.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:18:40 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/community.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:18:40 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 61.79.144.160 at 2016-05-10 12:18:40 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/post.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:18:40 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/project.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:18:40 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:18:40 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 61.79.144.160 at 2016-05-10 12:18:40 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:18:41 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/admin/attendance" for 61.79.144.160 at 2016-05-10 12:19:56 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#attendance as HTML
+  Rendered admin/attendance.erb within layouts/application (2.1ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 130ms (Views: 129.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/community.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:19:57 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/post.self-39c17a3b60ab027ee556448e6cee93b7ef927f138b62560ce25b0e3f619ed075.css?body=1" for 61.79.144.160 at 2016-05-10 12:19:57 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:19:58 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-5b7962634beb6e17a28099faf6dd543af1ff77237108bf716098be68c169876f.css?body=1" for 61.79.144.160 at 2016-05-10 12:19:58 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homework.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:19:58 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 61.79.144.160 at 2016-05-10 12:19:58 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-46e90b9289857cfb4bd203fd6ba3f52880b7e7f4277abe3cc82de6057f38b2cc.css?body=1" for 61.79.144.160 at 2016-05-10 12:19:58 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 61.79.144.160 at 2016-05-10 12:19:58 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 61.79.144.160 at 2016-05-10 12:19:58 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/project.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:19:58 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:19:58 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/community.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:19:58 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:19:58 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homework.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:19:58 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/post.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:19:58 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/project.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:19:58 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 61.79.144.160 at 2016-05-10 12:19:58 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/admin/attendance" for 61.79.144.160 at 2016-05-10 12:23:52 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#attendance as HTML
+  Rendered admin/attendance.erb within layouts/application (0.6ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 247ms (Views: 245.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/community.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:23:53 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/post.self-39c17a3b60ab027ee556448e6cee93b7ef927f138b62560ce25b0e3f619ed075.css?body=1" for 61.79.144.160 at 2016-05-10 12:23:53 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/project.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:23:53 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homework.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:23:54 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-46e90b9289857cfb4bd203fd6ba3f52880b7e7f4277abe3cc82de6057f38b2cc.css?body=1" for 61.79.144.160 at 2016-05-10 12:23:54 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 61.79.144.160 at 2016-05-10 12:23:54 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:23:54 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-5b7962634beb6e17a28099faf6dd543af1ff77237108bf716098be68c169876f.css?body=1" for 61.79.144.160 at 2016-05-10 12:23:54 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 61.79.144.160 at 2016-05-10 12:23:54 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:23:54 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 61.79.144.160 at 2016-05-10 12:23:54 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/community.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:23:54 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:23:54 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homework.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:23:54 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/post.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:23:54 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/project.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:23:54 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 61.79.144.160 at 2016-05-10 12:23:54 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/admin/attendance" for 61.79.144.160 at 2016-05-10 12:25:41 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdminController#attendance as HTML
+  Rendered admin/attendance.erb within layouts/application (0.6ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 126ms (Views: 125.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:25:42 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/community.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:25:42 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/post.self-39c17a3b60ab027ee556448e6cee93b7ef927f138b62560ce25b0e3f619ed075.css?body=1" for 61.79.144.160 at 2016-05-10 12:25:42 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 61.79.144.160 at 2016-05-10 12:25:42 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 61.79.144.160 at 2016-05-10 12:25:42 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 61.79.144.160 at 2016-05-10 12:25:42 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:25:42 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/community.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:25:42 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homework.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:25:42 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/post.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:25:42 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/project.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:25:42 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/homework.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:25:43 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/project.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 61.79.144.160 at 2016-05-10 12:25:43 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-46e90b9289857cfb4bd203fd6ba3f52880b7e7f4277abe3cc82de6057f38b2cc.css?body=1" for 61.79.144.160 at 2016-05-10 12:25:43 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-5b7962634beb6e17a28099faf6dd543af1ff77237108bf716098be68c169876f.css?body=1" for 61.79.144.160 at 2016-05-10 12:25:43 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 61.79.144.160 at 2016-05-10 12:25:43 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 61.79.144.160 at 2016-05-10 12:25:43 +0000
+Cannot render console from 61.79.144.160! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
