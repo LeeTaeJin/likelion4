@@ -9,34 +9,34 @@
             <hr>
           
             <table class="table table-bordered">
-              <thead>
+            <thead>
+              <tr>
+                <th>id</th>
+                <th>이름</th>
+                <th>이메일</th>
+                <th>가입일</th>
+                <th>-</th>
+              </tr>
+            </thead>
+            
+            <tbody>
+              <% User.all.each do |user|%>
                 <tr>
-                  <th>id</th>
-                  <th>이름</th>
-                  <th>이메일</th>
-                  <th>가입일</th>
-                  <th>-</th>
+                  <td><%= user.id %></td>
+                  <td><%= user.name%></td>
+                  <td><%= user.email %></a></td>
+                  <td><%= (user.created_at + 9.hours).to_s(:db)%></td>
+                  <td>
+                    <div class="btn-group" role="group" aria-label="...">
+                      <a href='#edit_<%=user.id%>' data-toggle="modal" type="button" class="btn btn-sm btn-info">이름 수정</a>
+                      <a href="#confirm_<%=user.id%>" data-toggle="modal" type="button" class="btn btn-sm btn-danger">삭제</a>
+                    </div>
+                  </td>
                 </tr>
-              </thead>
-              
-              <tbody>
-                <% User.all.each do |user|%>
-                  <tr>
-                    <td><%= user.id %></td>
-                    <td><%= user.name%></td>
-                    <td><%= user.email %></a></td>
-                    <td><%= (user.created_at + 9.hours).to_s(:db)%></td>
-                    <td>
-                      <div class="btn-group" role="group" aria-label="...">
-                        <a href='#edit_<%=user.id%>' data-toggle="modal" type="button" class="btn btn-sm btn-info">이름 수정</a>
-                        <a href="#confirm_<%=user.id%>" data-toggle="modal" type="button" class="btn btn-sm btn-danger">삭제</a>
-                      </div>
-                    </td>
-                  </tr>
-                <%end%>
-              </tbody>
-              
-            </table>
+              <%end%>
+            </tbody>
+            
+          </table>
           
         </div>
       </div>
