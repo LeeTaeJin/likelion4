@@ -151,6 +151,7 @@
               
               <tbody>
                 <% Attendance.where("date = ?", s.date).each do |att|%>
+                  <% if User.exists?(:id => att.user_id)%>
                   <tr>
                     <td><%= att.user_id %></td>
                     <td><%= User.find(att.user_id).name%></td>
@@ -163,6 +164,7 @@
                     </td>
                     <input type="hidden" value="<%=att.id%>" name="id_<%=att.user_id%>"> <!--수정할 어탠던스 디비의아이디-->
                   </tr>
+                  <%end%>
                 <%end%>
               </tbody>
               

@@ -1,23 +1,15 @@
+<style type="text/css">
+@import url(http://fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+</style>
 
-<div class="contain "id="menu_font" style="padding-top:100px;padding-bottom:50px">
+<div class="contain"id="menu_font" style="padding-top:50px;padding-bottom:50px;background-image:url(https://images.unsplash.com/photo-1456615074700-1dc12aa7364d?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=76cdf4017ee0fc751a3eecd9fdb8ac57);background-size:cover">
   <div class="row" >
     
-    <div class="col-md-8 col-sm-6">
-      <div style=" padding:50px"><!--background-color:white;-->
-        <center>
-          <div style="background-image: URL(http://2.bp.blogspot.com/--5yqttOEAsw/Urr9mw2ptsI/AAAAAAAADME/uR7L1d-5y50/s1600/howways-logo2-94x94.png); "></div>
-          
-          
-          
-          
-        <img src="https://scontent.xx.fbcdn.net/hphotos-xtl1/v/t1.0-9/12743755_949678688441198_8346172877976822994_n.png?oh=cb8fa34f31177dcc6adeeffab4eb76c2&oe=575CA352" style="height:300px"><br>
-        <h4>기술적 장벽때문에 본인의 생각을 세상 밖으로 표현하지 못하신 평택대 분들과 감동의 순간을 만들어가고 싶습니다.</h4><br>
-        <!--<a href="http://likelion.net"class="btn btn-info btn-lg">3.2 ~ 11 지원하기</a>-->
-        </center>
-      </div>
+    <div class="col-md-8 col-sm-6" style="padding-top:250px;padding-left:50px;padding-bottom:100px">
+      <span id="texts" style="font-family:'Jeju Myeongjo', serif; font-size:40px">&nbsp;</span>
     </div>
     
-    <div class="col-md-3 col-sm-5">
+    <div class="col-md-3 col-sm-5" style="padding-top:80px">
       <div class="well"> 
          <form class="form"  role="search" action="/home/search" method="POST">
           <h4>검색</h4>
@@ -38,81 +30,90 @@
     </div>
     
   </div>
+  
+  <div class="row">
+    <div class="col-md-1 col-sm-1">
+    </div>
+    <div class="col-md-5 col-sm-5">
+      <div class="panel panel-default">
+        <% Project.last(1).each do |p|%>
+        <div class="panel-body">
+          <center><h4><%=p.title%></h4></center>
+          <hr>
+            이미지<br>
+            <%=p.content%>
+            <br><br>
+            <% Project.last(5).reverse_each do |f|%>
+              <a href="/project/main?view_post=<%=f.id%>" class="list-group-item"><%=f.id%> - <%=f.title%></a>
+            <%end%>
+        </div>
+        <%end%>
+      </div>
+    </div>
+    <div class="col-md-5 col-sm-5">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+            <ul id="myTab" class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="false">공지사항</a></li>
+              <li role="presentation" class=""><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="true">아이디어</a></li>
+              <!--<li role="presentation" class=""><a href="#project" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="true">프로젝트</a></li>-->
+              
+            </ul>
+            <div id="myTabContent" class="tab-content">
+              <div role="tabpanel" class="tab-pane fade active in" id="home" aria-labelledby="home-tab">
+                <% Post.where("category = ?", "공지사항").last(1).each do |f|%>
+                  <p><pre style="border:0px; background:white " align="left" id="menu_font">
+                      <br><%= f.content %>
+                    </pre></p>
+                <%end%>
+                <% Post.where("category = ?", "공지사항").last(5).reverse_each do |f|%>
+                  <a href="/post/view/<%=f.id%>" class="list-group-item"><%=f.id%> - <%=f.title%></a>
+                <%end%>
+                <a class="btn btn-info btn-lg btn-block" href="/post/main">더보기</a>
+              </div>
+              
+              <div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="profile-tab">
+                <div class="list-group" align="left">
+                  <br>
+                    <% Post.where("category = ?", "아이디어").last(5).reverse_each do |f|%>
+                    <a href="/community/view/<%=f.id%>">
+                      <div class="row">
+                        <div class="col-md-2 col-sm-2">
+                          <center><h2><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></h2></center>
+                        </div>
+                        <div class="col-md-10 col-sm-10">
+                          <br>
+                          <p><%=f.title%></p>
+                          <strong class="primary-font"><%=User.find(f.user).name%></strong>
+                            <small class="pull-right text-muted">
+                                <i class="fa fa-clock-o fa-fw"></i> <%= (f.created_at + 9.hours).to_s(:db)%>
+                            </small>
+                        </div>
+                      </div>
+                        <hr>
+                    </a>
+                    <%end%>
+                    <a class="btn btn-info btn-lg btn-block" href="/community/main?posting=아이디어">더보기</a>
+                    
+                </div>
+              </div>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>    
+    
+    <div class="col-md-1 col-sm-1"></div>
+  </div>
+  
 
 </div><!--<div style="background-color:lightgray">-->
 
 
-<div style="background-color:black; padding:100px" id="menu_font">
-  <div class="row">
-    <div class="col-md-4">
-      
-        
-        <div class="panel panel-default">
-          <div class="panel-body" align="center">
-            <h3>공 지 사 항</h3>
-            <hr>
-             
-            <div class="list-group" align="left">
-              <% Post.where("category = ?", "공지사항").last(5).reverse_each do |f|%>
-              <a href="/post/view/<%=f.id%>" class="list-group-item"><%=f.id%> - <%=f.title%></a>
-              <%end%>
-            </div>
-            
-            <div align="right">
-              <a class="btn btn-default btn-sm" href="/post/main">더보기</a> 
-            </div>      
-          </div>
-        </div>
-        
-    </div>  
-    
-    <div class="col-md-4">
-        <div class="panel panel-default">
-          <div class="panel-body" align="center">
-            <h3>아 이 디 어</h3>
-            <hr>
-             
-            <div class="list-group" align="left">
-              <% Post.where("category = ?", "아이디어").last(5).reverse_each do |f|%>
-              <a href="/community/view/<%=f.id%>" class="list-group-item"><%=f.id%> - <%=f.title%></a>
-              <%end%>
-            </div>
-            
-            <div align="right">
-              <a class="btn btn-default btn-sm" href="/community/main?posting=아이디어">더보기</a> 
-            </div>      
-          </div>
-        </div>
-        
-      
-    </div>
-    
-    <div class="col-md-4">
-      <div class="panel panel-default">
-        
-          <div class="panel-body" align="center">
-            <h3>프 로 젝 트</h3>
-            <hr>
-             
-            <div class="list-group" align="left">
-              <% Project.last(5).reverse_each do |f|%>
-              <a href="/project/main?view_post=<%=f.id%>" class="list-group-item"><%=f.id%> - <%=f.title%></a>
-              <%end%>
-            </div>
-            
-            <div align="right">
-              <% if Project.count == 0%>
-                <a class="btn btn-default btn-sm" href="/project/main?view_post=등록된 프로젝트가 없습니다.">더보기</a> 
-              <% else%>
-                <a class="btn btn-default btn-sm" href="/project/main?view_post=<%=Project.last.id%>">더보기</a> 
-              <%end%>
-              
-            </div>      
-          </div>
-        </div>
-        
-    </div>
-  </div>
+<div style="background-color:black" id="menu_font">
+  
 </div>
 
 
@@ -207,33 +208,6 @@
   </div>
 </div>
 
-<!--공지사항 팝업창 -->
-
-
-<% Popup.last(1).each do |pop|%>
-  
-  <div class="modal fade" id="popup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="false">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="myModalLabel"><%= (pop.created_at + 9.hours).to_s(:db).to_date%>의 공지사항</h4>
-        </div>
-        <div class="modal-body">
-          <p><pre style="border:0px; background:white " align="left" id="menu_font">
-            <br><%= pop.content %>
-          </pre></p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-<%end%>
-
-
 
 <script>
 var people;
@@ -310,13 +284,54 @@ function third() {
       team = "<h3>" + team + "</h3><br>";
       
       document.getElementById("team").innerHTML = team;
-   
+    
+    // for (var i=Number(0); !names[i];i++){
+    //     // for(var j=i; j<=(j+parseInt(team_num)-1);j++)
+    //       // console.log((i+1) + "번째 팀 : " + names[j] + " ");
+    //       console.log(typeof(i) + "/" + i);
+    // }
+      
+    //     var newArray = names.slice( parseInt(start), parseInt(start + team_num) ); //두번째껀 howmany팀구성원 수까지 새로운 배열에 넣음
+    //     parseInt(start=start+team_num); //다음 구성원 시작점을 출력한다.
+    //     console.log(i + "번째 팀 : " + newArray);
+    //     console.log("start = " + parseInt(start) +"/ names[start] = " + names[parseInt(start)]);
+    //     // 숫자들 사이에, 쉼표와 공백을 넣어서, 문자로 합치기. 
+  		// return newArray.join( ", " ); 	 // 텍스트로 저장됨. 
+    //   }
+    
+    
+    // var tmp;
+    // for(var i=0;i<people;i++){
+    //   tmp = names[i] + " " 
+    // }
+    
+    // Math.floor( (Math.random() * (2 - 1 + 1)) + n1 );
+    // for(var i=1 ; i<=people ; i++)
+    // {
+    //   teamddd =teamddd + names[i]+",";
+    // }
+    // document.getElementById("team").innerText = tmp;
 }
-//모달 팝업
-$(document).ready(function() { 
-    $('#popup').modal('show'); 
-}); 
 
+var text = "멋쟁이 사자처럼 @ 평택대학교 ";
+var cnt = 0;
+var speed = 100; //글자가 찍히는 속도
+var timer1 = null;
+ 
+function gogogo(){
+    document.getElementById('texts').innerHTML = text.substring(0, cnt) + "_";
+    cnt++;
+    timer1 = setTimeout('gogogo()', speed);
+ 
+    if(text.length < cnt){
+        // 아래 주석으로 처리된 부분을 지우면 한번만 실행됩니다.
+        //clearTimeout(timer1)
+        cnt = 0;
+    }
+}
+ 
+gogogo();
 </script>
+
 
 

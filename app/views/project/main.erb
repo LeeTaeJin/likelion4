@@ -48,7 +48,7 @@
                     <div class="panel-body">
                       <h4><%= @view_post.title %> <small>_ <%=User.find(@view_post.writer).name%></small></h4>
                       <hr>
-                      
+                      <!--<= image_tag @view_post.image.url(:thumb)%>-->
                       <h5><pre style="border:0px; background:white " align="left" id="menu_font">
                         <br><%= @view_post.content %>
                       </pre></h5><br>

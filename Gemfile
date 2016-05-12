@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'figaro'
-
+gem 'carrierwave'
+gem 'fog-aws'
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
