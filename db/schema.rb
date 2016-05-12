@@ -52,6 +52,7 @@ ActiveRecord::Schema.define(version: 20160512043155) do
     t.string   "team_member"
     t.string   "content"
     t.string   "address"
+    t.string   "image"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
