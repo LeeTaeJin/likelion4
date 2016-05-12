@@ -75,8 +75,8 @@
         <div class="modal-body">
           
           <% Popup.all.reverse_each do |pop|%>
-          
-              <h4><input type="radio" name="checking_<%=pop.id%>" value="true" checked="<%=pop.checking%>">&nbsp<%= (pop.created_at + 9.hours).to_s(:db).to_date%>의 공지사항</h4>
+          <!--checked="%=pop.checking%>"-->
+              <h4><input type="radio" name="checking_<%=pop.id%>" value="true" >&nbsp<%= (pop.created_at + 9.hours).to_s(:db).to_date%>의 공지사항</h4>
               
             <p><pre style="border:0px; background:white " align="left" id="menu_font">
             <br><%= pop.content %>
