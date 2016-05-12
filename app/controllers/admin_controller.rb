@@ -44,5 +44,12 @@ class AdminController < ApplicationController
     redirect_to :back
   end
   
+  def popup
+    popup = Popup.new
+    popup.content = params[:content]
+    popup.save
+    
+    redirect_to :back
+  end
   
 end

@@ -8,18 +8,32 @@
             <center><h2>LikeLion A D M I N</h2></center>
             <hr>
           <div class="row">
-            <div class="col-md-5">
+            <div class="col-md-6 col-sm-6">
               <a href="/admin/signup_person" class="btn btn-info btn-lg btn-block" >가입자 관리</a>
               <br>
               <a href="/admin/attendance" class="btn btn-warning btn-lg btn-block" >4기 출석체크</a>
               <br>
               
               <a href="/admin/signup_person" class="btn btn-info btn-lg btn-block" >간단 공지사항 작성</a>
-              <a href="/admin/signup_person" class="btn btn-info btn-lg btn-block" >공지사항 팝업창 관리</a>
               
               <a href="/admin/signup_person" class="btn btn-info btn-lg btn-block" >팀플 관리</a>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-6 col-sm-6">
+              <form action="/admin/popup" method="POST">
+                <div class="panel panel-default">
+                  <div class="panel-body">
+                    공지사항 팝업창
+                  </div>
+                  <div class="panel-footer">
+                    <br>
+                    <textarea name="content" class="form-control" placeholder="공지사항" rows="10" cols="30"  required></textarea>
+                    <br>
+                    <button type="submit" class="btn btn-info btn-block">공지사항 작성하기</button>
+                    <br>
+                  </div>
+                </div>
+              </form>
+              
             </div>
           </div>
         </div>

@@ -8,6 +8,7 @@ class CreateProjects < ActiveRecord::Migration
       t.string :team_member
       t.string :content
       t.string :address
+      t.string :image
       
       t.timestamps null: false
     end
