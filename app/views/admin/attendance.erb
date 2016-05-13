@@ -63,7 +63,7 @@
 
 
 <!--출첵 생성 모달-->
-<div class="modal fade" id="add_attendance" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+<div class="modal fade" id="add_attendance" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" data-backdrop="false">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -127,7 +127,7 @@
 <% Attendance.select(:date).uniq.reverse.each do |s|%>
               
 <!--출첵 확인 모달(날짜버튼클릭시)-->
-<div class="modal fade" id="<%=s.date%>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+<div class="modal fade" id="<%=s.date%>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" data-backdrop="false">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
