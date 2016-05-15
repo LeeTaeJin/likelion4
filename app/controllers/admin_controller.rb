@@ -47,13 +47,13 @@ class AdminController < ApplicationController
   def popup
     Popup.all.each do |pop|
       popup = Popup.find(pop.id)
-      popup.checking = "false"
+      #popup.checking = "false"
       popup.save
     end
     
     popup = Popup.new
     popup.content = params[:content]
-    popup.checking =params[:checking]
+    #popup.checking =params[:checking]
     popup.save
     
     redirect_to :back
@@ -62,7 +62,7 @@ class AdminController < ApplicationController
   def popup_update
     Popup.all.each do |pop|
       popup = Popup.find(pop.id)
-      popup.checking =params["checking_#{pop.id}"]
+      #popup.checking =params["checking_#{pop.id}"]
       popup.save
     end
     redirect_to :back
