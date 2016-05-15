@@ -33,7 +33,7 @@
                       <tbody>
                         <% @view_post.replies.each do |r| %>
                         <tr>
-                          <th><% if User.where("id=?",a.user).exists?%>
+                          <th><% if User.where("id=?",r.user).exists?%>
                                 탈퇴한 유저
                               <%else%>
                                 <%= User.find(r.user).name %></th><!--User.where("id=?",r.user).email -->
