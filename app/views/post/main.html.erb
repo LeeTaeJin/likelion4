@@ -62,7 +62,7 @@
                       
                         <td><%= a.id %></td>
                         <td><a href="/post/view?id=<%= a.id %>"><%= a.title %> (<%=a.replies.count%>)</a></td>
-                        <td><% if a.user.nil? %>
+                        <td><% if User.where("id=?",a.user).exists?%>
                               탈퇴한 유저
                             <% else%>
                               <% User.find(a.user).name%>

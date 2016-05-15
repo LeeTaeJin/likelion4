@@ -58,10 +58,10 @@
                         <td><%= a.id %></td>
                         <td><%= a.category%></td>
                         <td><a href="/community/view?id=<%= a.id %>"><%= a.title %> (<%=a.replies.count%>)</a></td>
-                        <td><% if a.user.nil? %>
-                              탈퇴한 유저
-                            <% else%>
+                        <td><% if User.where("id=?",a.user).exists?%>
                               <%=User.find(a.user).name%>
+                            <% else%>
+                              탈퇴한 유저
                             <%end%>
                         </td>
                         <td><%= (a.created_at + 9.hours).to_s(:db)%></td>
@@ -85,10 +85,10 @@
                       <td><%= a.id %></td>
                       <td><%= a.category%></td>
                       <td><a href="/community/view?id=<%= a.id %>"><%= a.title %> (<%=a.replies.count%>)</a></td>
-                      <td><% if a.user.nil?%>
-                            탈퇴한 유저
-                          <%else%>
+                      <td><% if User.where("id=?",a.user).exists?%>
                             <%=User.find(a.user).name%>
+                          <%else%>
+                            탈퇴한 유저
                           <%end%>
                       </td>
                       <td><%= (a.created_at + 9.hours).to_s(:db)%></td>
