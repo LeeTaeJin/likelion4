@@ -1,0 +1,191 @@
+<div style="background-color:black; padding-top:150px;padding-bottom:300px" id="menu_font">
+  <div class="row">
+    <div class="col-md-2 col-xs-2"></div>
+    
+    <div class="col-md-8 col xs-8">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <center><h2>에블바디 출석 첵!</h2></center>
+          <hr>
+            
+          <div class="row">
+            <div class="col-md-3 col-sm-3">
+              <a href="#add_attendance" data-toggle="modal" class="btn btn-info btn-lg btn-block" ><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+              <% Attendance.select(:date).uniq.order(:date).each do |s|%>
+                <% @day = ["일","월","화","수","목","금","토"]%>
+                <a href="#<%=s.date%>" data-toggle="modal" class="btn btn-default btn-block" ><%=s.date%> (<%=@day[s.date.wday]%>)</a>
+              <%end%>
+            </div>
+            <div class="col-md-9 col-sm-9">
+              <!--% Attendance.select(:date).map{ |i| i.date.year }.uniq.each do |s| %>-->
+              <!--  <a href="#" data-toggle="modal" class="btn btn-lg btn-warning" >%=s%>년</a>-->
+              <!--%end%>-->
+              <!--<br>-->
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>id</th>
+                    <th>이름</th>
+                    <% Attendance.select(:date).uniq.order(:date).each do |s|%>
+                      <th><%=s.date%></th>
+                    <%end%>
+                  </tr>
+                </thead>
+                
+                <tbody>
+                  <% User.all.each do |user|%>
+                  <!--3번중 2번 결석시 패널티-->
+                  
+                    <tr>
+                      <td><%=user.id%></td><!--id-->
+                      <td><%= user.name %></td><!--name-->
+                      <% Attendance.where("user_id=?", user.id).order(:date).each do |s|%>
+                        <td><%=s.state%></td>
+                      <%end%>
+                    </tr>
+                  <%end%>
+                </tbody>
+                
+              </table>
+            </div>
+          </div>
+            
+          
+        </div>
+      </div>
+      
+    </div>
+    <div class="col-md-2 col-xs-2"></div>
+    
+  </div>
+
+</div>
+
+
+<!--출첵 생성 모달-->
+<div class="modal fade" id="add_attendance" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" data-backdrop="false">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">새로운 출결을 생성합니다.</h4>
+      </div>
+      <form action="/admin/attendance_write" method="GET">
+      
+      <div class="modal-body">
+        
+          <div class="form-group">
+            <label for="recipient-name" class="control-label">날짜를 입력해주세요 :</label>
+            <input type="date" class="form-control" name="date" required>
+          </div>
+          <br>
+          <div class="form-group">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>id</th>
+                  <th>이름</th>
+                  <th>출석 여부</th>
+                </tr>
+              </thead>
+              
+              <tbody>
+                <% User.all.each do |user|%>
+                  <tr>
+                    <td><%= user.id %></td>
+                    <td><%= user.name%></td>
+                    <td>
+                      <select name="select_<%=user.id%>" class="form-control">
+                        <option value="출석">출석</option>
+                        <option value="결석">결석</option>
+                        <option value="기타">기타(출석)</option>
+                      </select>
+                    </td>
+                    
+                  </tr>
+                <%end%>
+              </tbody>
+              
+            </table>
+          </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+        <button type="submit" class="btn btn-primary">출결 저장하기</button>
+      </div>
+      
+      </form>
+    
+    </div>
+  </div>
+</div>
+
+
+
+
+<% Attendance.select(:date).uniq.reverse.each do |s|%>
+              
+<!--출첵 확인 모달(날짜버튼클릭시)-->
+<div class="modal fade" id="<%=s.date%>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" data-backdrop="false">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <% @day = ["일","월","화","수","목","금","토"]%>
+        <h4 class="modal-title" id="exampleModalLabel"><%=s.date%> (<%=@day[s.date.wday]%>) 출결 사항입니다.</h4>
+      </div>
+      <form action="/admin/attendance_modify" method="GET">
+      
+      <div class="modal-body">
+          <br>
+          <div class="form-group">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>id</th>
+                  <th>이름</th>
+                  <th>출석 여부</th>
+                </tr>
+              </thead>
+              
+              <tbody>
+                <% Attendance.where("date = ?", s.date).each do |att|%>
+                  <% if User.exists?(:id => att.user_id)%>
+                  <tr>
+                    <td><%= att.user_id %></td>
+                    <td><%= User.find(att.user_id).name%></td>
+                    <td>
+                      <select name="select_<%=att.user_id%>" class="form-control">
+                        <option value="출석" <% if att.state= "출석" then%>selected<%end%>>출석</option>
+                        <option value="결석" <% if att.state= "결석" then%>selected<%end%>>결석</option>
+                        <option value="기타" <% if att.state= "기타" then%>selected<%end%>>기타(출석)</option>
+                      </select>
+                    </td>
+                    <input type="hidden" value="<%=att.id%>" name="id_<%=att.user_id%>"> <!--수정할 어탠던스 디비의아이디-->
+                  </tr>
+                  <%end%>
+                <%end%>
+              </tbody>
+              
+            </table>
+          </div>
+        
+      </div>
+      
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+        <button type="submit" class="btn btn-primary">출결 저장하기</button>
+      </div>
+      
+      </form>
+    
+    </div>
+  </div>
+</div>
+
+
+
+
+ <%end%>

@@ -62,8 +62,13 @@
                       
                         <td><%= a.id %></td>
                         <td><a href="/post/view?id=<%= a.id %>"><%= a.title %> (<%=a.replies.count%>)</a></td>
-                        <td><%=User.find(a.user).name%></td><!--네임으로 수정해야함-->
-                        <td><%= a.created_at.in_time_zone("Seoul")%></td>
+                        <td><% if User.where("id=?",a.user).exists?%>
+                              탈퇴한 유저
+                            <% else%>
+                              <% User.find(a.user).name%>
+                            <%end%>  
+                        </td><!--네임으로 수정해야함-->
+                        <td><%= (a.created_at + 9.hours).to_s(:db)%></td>
                         <%if current_user%>
                         <% if current_user.email=="admin@ptu.ac.kr"%>
                         <td>

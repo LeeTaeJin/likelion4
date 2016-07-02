@@ -18,7 +18,7 @@
                 <div class="panel panel-default">
                   
                   <div class="panel-body">
-                    <h4><%= @view_post.title %> <small>_ <%=User.find(@view_post.user).name%></small></h4>
+                    <h4><%= @view_post.title %> <small>_ <% if User.where("id=?",@view_post.user).exists?%><%=User.find(@view_post.user).name%><%else%>탈퇴한 유저<%end%></small></h4>
                     <hr>
                     
                     <h5><pre style="border:0px; background:white " align="left" id="menu_font">
@@ -32,7 +32,11 @@
                       <tbody>
                         <% @view_post.replies.each do |r| %>
                         <tr>
-                          <th><%= User.find(r.user).name%></th><!--User.where("id=?",r.user).email -->
+                          <th><% if User.where("id=?",a.user).exists?%>
+                                <%= User.find(r.user).name%></th><!--User.where("id=?",r.user).email -->
+                              <%else%>
+                                탈퇴한 유저
+                              <%end%>
                           <td><%= r.content %></td>
                           <% if current_user%>
                             <% if current_user.id == r.user%>

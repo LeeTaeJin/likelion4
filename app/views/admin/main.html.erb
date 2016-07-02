@@ -8,6 +8,7 @@
             <center><h2>LikeLion A D M I N</h2></center>
             <hr>
           <div class="row">
+<<<<<<< HEAD
             <div class="col-md-5">
               <a href="/admin/signup_person" class="btn btn-info btn-lg btn-block" >가입자 관리</a>
               <br>
@@ -20,6 +21,37 @@
               <a href="/admin/signup_person" class="btn btn-info btn-lg btn-block" >팀플 관리</a>
             </div>
             <div class="col-md-5">
+=======
+            <div class="col-md-6 col-sm-6">
+              <a href="/admin/signup_person" class="btn btn-info btn-lg btn-block" >가입자 관리</a>
+              <br>
+              <a href="/admin/attendance" class="btn btn-warning btn-lg btn-block" >4기 출석체크</a>
+              <br>
+              
+              <a href="/admin/signup_person" class="btn btn-info btn-lg btn-block" >간단 공지사항 작성</a>
+              
+              <a href="/admin/signup_person" class="btn btn-info btn-lg btn-block" >팀플 관리</a>
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <form action="/admin/popup" method="POST">
+                <div class="panel panel-default">
+                  <div class="panel-body">
+                    공지사항 팝업창
+                  </div>
+                  <div class="panel-footer">
+                    <br>
+                    <textarea name="content" class="form-control" placeholder="공지사항" rows="10" cols="30"  required></textarea>
+                    <br>
+                    <input type="hidden" name="checking" value="true">
+                    <!--지금 팝업으로 표시될 공지사항을 선택하는 것-->
+                    <button type="submit" class="btn btn-info btn-block">공지사항 작성하기</button>
+                    <br>
+                    <a href="#history" data-toggle="modal" type="button" class="btn btn-default btn-block">공지사항 히스토리</a>
+                  </div>
+                </div>
+              </form>
+              
+>>>>>>> e29d8e258f848d6da2dad38cdc3a73ca4b5f52d8
             </div>
           </div>
         </div>
@@ -45,3 +77,34 @@
   </div>
 
 </div>
+
+
+<div class="modal fade" id="history" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="false">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">공지사항 히스토리입니다.</h4>
+        </div>
+        <form action="/admin/popup_update" method="POST">
+        <div class="modal-body">
+          
+          <% Popup.all.reverse_each do |pop|%>
+          <!--checked="%=pop.checking%>"-->
+              <h4><input type="radio" name="checking_<%=pop.id%>" value="true" >&nbsp<%= (pop.created_at + 9.hours).to_s(:db).to_date%>의 공지사항</h4>
+              
+            <p><pre style="border:0px; background:white " align="left" id="menu_font">
+            <br><%= pop.content %>
+            </pre></p>
+              <hr>
+          <%end%>
+          
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-info" data-dismiss="modal">저장하기</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>

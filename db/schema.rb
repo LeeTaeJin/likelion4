@@ -11,13 +11,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160113113002) do
+ActiveRecord::Schema.define(version: 20160512043155) do
+
+  create_table "attendances", force: :cascade do |t|
+    t.integer  "user_id"
+    t.string   "state"
+    t.date     "date"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "homeworks", force: :cascade do |t|
     t.integer  "post_id"
     t.integer  "user"
     t.string   "content"
     t.string   "href"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "popups", force: :cascade do |t|
+    t.string   "content"
+    t.string   "checking"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -38,6 +53,7 @@ ActiveRecord::Schema.define(version: 20160113113002) do
     t.string   "team_member"
     t.string   "content"
     t.string   "address"
+    t.string   "image"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end

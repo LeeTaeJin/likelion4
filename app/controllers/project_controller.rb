@@ -20,6 +20,7 @@ class ProjectController < ApplicationController
     new.team_member = params[:team_member]
     new.content = params[:content]
     new.address = params[:address]
+    # new.image = params[:image] #이미지파일 저장
     new.save
     
     redirect_to action: "main", view_post: Project.last.id

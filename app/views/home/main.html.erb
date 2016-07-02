@@ -1,10 +1,15 @@
 
 <div class="contain "id="menu_font" style="padding-top:100px;padding-bottom:50px">
-  <div class="row">
+  <div class="row" >
     
     <div class="col-md-8 col-sm-6">
       <div style=" padding:50px"><!--background-color:white;-->
         <center>
+          <div style="background-image: URL(http://2.bp.blogspot.com/--5yqttOEAsw/Urr9mw2ptsI/AAAAAAAADME/uR7L1d-5y50/s1600/howways-logo2-94x94.png); "></div>
+          
+          
+          
+          
         <img src="https://scontent.xx.fbcdn.net/hphotos-xtl1/v/t1.0-9/12743755_949678688441198_8346172877976822994_n.png?oh=cb8fa34f31177dcc6adeeffab4eb76c2&oe=575CA352" style="height:300px"><br>
         <h4>기술적 장벽때문에 본인의 생각을 세상 밖으로 표현하지 못하신 평택대 분들과 감동의 순간을 만들어가고 싶습니다.</h4><br>
         <!--<a href="http://likelion.net"class="btn btn-info btn-lg">3.2 ~ 11 지원하기</a>-->
@@ -116,7 +121,7 @@
 
 
 <!--랜덤팀 나누기 모달-->
-<div class="modal fade" id="random_team_first" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="random_team_first" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="false">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -137,7 +142,7 @@
   </div>
 </div>
 
-<div class="modal fade" id="random_team_second" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="random_team_second" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="false">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -160,7 +165,7 @@
 </div>
 
 
-<div class="modal fade" id="random_team_third" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="random_team_third" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="false">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -183,7 +188,7 @@
 </div>
 
 
-<div class="modal fade" id="random_team_fourth" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="random_team_fourth" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="false">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -202,6 +207,33 @@
     </div>
   </div>
 </div>
+
+<!--공지사항 팝업창 -->
+
+
+<% Popup.last(1).each do |pop|%>
+  
+  <div class="modal fade" id="popup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="false">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel"><%= (pop.created_at + 9.hours).to_s(:db).to_date%>의 공지사항</h4>
+        </div>
+        <div class="modal-body">
+          <p><pre style="border:0px; background:white " align="left" id="menu_font">
+            <br><%= pop.content %>
+          </pre></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<%end%>
+
 
 
 <script>
@@ -279,35 +311,13 @@ function third() {
       team = "<h3>" + team + "</h3><br>";
       
       document.getElementById("team").innerHTML = team;
-    
-    // for (var i=Number(0); !names[i];i++){
-    //     // for(var j=i; j<=(j+parseInt(team_num)-1);j++)
-    //       // console.log((i+1) + "번째 팀 : " + names[j] + " ");
-    //       console.log(typeof(i) + "/" + i);
-    // }
-      
-    //     var newArray = names.slice( parseInt(start), parseInt(start + team_num) ); //두번째껀 howmany팀구성원 수까지 새로운 배열에 넣음
-    //     parseInt(start=start+team_num); //다음 구성원 시작점을 출력한다.
-    //     console.log(i + "번째 팀 : " + newArray);
-    //     console.log("start = " + parseInt(start) +"/ names[start] = " + names[parseInt(start)]);
-    //     // 숫자들 사이에, 쉼표와 공백을 넣어서, 문자로 합치기. 
-  		// return newArray.join( ", " ); 	 // 텍스트로 저장됨. 
-    //   }
-    
-    
-    // var tmp;
-    // for(var i=0;i<people;i++){
-    //   tmp = names[i] + " " 
-    // }
-    
-    // Math.floor( (Math.random() * (2 - 1 + 1)) + n1 );
-    // for(var i=1 ; i<=people ; i++)
-    // {
-    //   teamddd =teamddd + names[i]+",";
-    // }
-    // document.getElementById("team").innerText = tmp;
+   
 }
-
+//모달 팝업
+$(document).ready(function() { 
+    $('#popup').modal('show'); 
+}); 
 
 </script>
+
 

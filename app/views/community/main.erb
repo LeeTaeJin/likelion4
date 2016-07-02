@@ -58,8 +58,18 @@
                         <td><%= a.id %></td>
                         <td><%= a.category%></td>
                         <td><a href="/community/view?id=<%= a.id %>"><%= a.title %> (<%=a.replies.count%>)</a></td>
+<<<<<<< HEAD
                         <td><%=User.find(a.user).name%></td>
                         <td><%= a.created_at.in_time_zone('Seoul')%></td>
+=======
+                        <td><% if User.where("id=?",a.user).exists?%>
+                              <%=User.find(a.user).name%>
+                            <% else%>
+                              탈퇴한 유저
+                            <%end%>
+                        </td>
+                        <td><%= (a.created_at + 9.hours).to_s(:db)%></td>
+>>>>>>> e29d8e258f848d6da2dad38cdc3a73ca4b5f52d8
                         <td>
                         <% if current_user.id==a.user %>
                         
@@ -79,14 +89,24 @@
                       <td><%= a.id %></td>
                       <td><%= a.category%></td>
                       <td><a href="/community/view?id=<%= a.id %>"><%= a.title %> (<%=a.replies.count%>)</a></td>
+<<<<<<< HEAD
                       <td><%=User.find(a.user).name%></td>
                       <td><%= a.created_at%></td>
+=======
+                      <td><% if User.where("id=?",a.user).exists?%>
+                            <%=User.find(a.user).name%>
+                          <%else%>
+                            탈퇴한 유저
+                          <%end%>
+                      </td>
+                      <td><%= (a.created_at + 9.hours).to_s(:db)%></td>
+>>>>>>> e29d8e258f848d6da2dad38cdc3a73ca4b5f52d8
                       <td>
                       <% if current_user.id==a.user %>
                       
                         <div class="btn-group">
-                          <a href="/post/delete?id=<%= a.id %>" class="btn btn-default btn-sm">삭제</a>
-                          <a href="/post/modify?id=<%= a.id %>" class="btn btn-default btn-sm">수정</a>
+                          <a href="/post/delete?id=<%= a.id %>" class="btn btn-default btn-xs">삭제</a>
+                          <a href="/post/modify?id=<%= a.id %>" class="btn btn-default btn-xs">수정</a>
                         </div>
                       
                       <%end%><!--삭제 수정 이프-->
